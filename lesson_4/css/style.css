@@ -1,0 +1,114 @@
+@import url("reset.css");
+
+* {
+   color: #1a3321;
+}
+
+a {
+   color: #701661;
+}
+
+h1 {
+   color: #140973;
+}
+
+h2, h3 {
+   color: #48128a;
+}
+
+[class*=__text-info] {
+   color: #ba0d38 ;
+}
+
+[class*=__item] {
+   color: #0dbaa0;
+}
+
+#domination_red, #influence_yellow, #steadiness_green, #compliance_blue {
+   color: #72c81c;
+}
+
+#mixed_types {
+   color: #539c0b;
+}
+
+p.text {
+   color: #5ac9aa;
+}
+
+p.main__text-info {
+   color: #d2d65e;
+}
+
+.main__title.title {
+   color: #5ed8eb;
+}
+
+.header__title.title, .footer__title.title {
+   color:#380ff2
+}
+
+.header__item, .main__item {
+   color: #f27d0f;
+}
+
+.header__link, .footer__link {
+   color: #0ff222;
+}
+
+.footer__text p{
+   color: #65dfe6;
+}
+
+.main__text p {
+   color: #6f94e8;
+}
+
+.main .main__text-info {
+   color: #6a5dde;
+}
+
+.header__text .header {
+   color: #e823b0;
+}
+
+[class*=__item] * {
+   color: #4bd2d7;
+} 
+
+.header * {
+   color: #a63c7a;
+}
+
+.footer > p {
+   color: #b5779b;
+}
+
+.footer__text-info > a {
+   color: #6e82ba;
+}
+
+.main ~ p {
+   color: #0ee64b;
+}
+
+.footer__text ~ p {
+   color: #d161fa;
+}
+
+.list ~ li {
+   color: #6123e8;
+}
+
+.list + .item {
+   color: #8c03fc;
+}
+
+.main + div {
+   color: #e3a259;
+}
+
+.main + h2 {
+   color: #46857d;
+}
+
