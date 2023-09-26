@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:regular,italic,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap");
 @import url('fonts.css');
 
 @import url("reset.css");
@@ -158,7 +158,7 @@ p {
 
 .main__title-cons {
    font-size: 30px;
-   font-weight: 600;
+   font-weight: 700;
    color: #37393F;
 }
 
@@ -167,11 +167,18 @@ p {
    color: #6B77E5;
 }
 
-.main__text-cons {
+.main__text-cons,
+.main__box-cons p,
+.main__item-cons {
    font-family: 'Inter', sans-serif;
    font-size: 18px;
    line-height: 1.46;
    color: #7D7D7D;
    text-indent: 0;
    max-width: 692px;
+}
+
+.main__item-cons {
+   font-weight: 500;
+   text-indent: 30px;
 }
