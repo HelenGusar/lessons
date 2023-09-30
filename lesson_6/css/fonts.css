@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+
+@font-face {
+  font-family: "Akvitania_Modern";
+  src:
+    url("../fonts/Akvitania_Modern.woff2") format("woff2"),
+    url("../fonts/Akvitania_Modern.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AnastasiaScript";
+  src:
+    url("../fonts/AnastasiaScript.woff2") format("woff2"),
+    url("../fonts/AnastasiaScript.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,253 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #7d7d7d;
+}
+
+.image {
+  max-width: 100%;
+}
+/*=============HEADER================*/
+.header {
+  font-family: "Akvitania_Modern", fantasy;
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+.header,
+.footer {
+  margin: 0 0 20px;
+  text-align: center;
+  color: #0a11cc;
+}
+
+.header__title {
+  font-size: 30px;
+}
+
+.header__text {
+  margin: 0 0 20px;
+}
+
+.header__text p {
+  line-height: 1.4;
+}
+
+.header__item,
+.footer__item {
+  margin: 0 0 15px;
+}
+
+.header__item:last-child {
+  margin: 0;
+}
+/*=================MAIN===============*/
+.section {
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+.section-consulting {
+  max-width: 745px;
+}
+
+.section__jewerelly {
+  max-width: 1227px;
+}
+
+.main__image-cons-b {
+  margin: 0 0 37px;
+}
+
+.main__image-cons-s {
+  margin: 0 29px 0 0;
+}
+
+.main__box-info {
+  display: inline-block;
+}
+
+.main__subtitle {
+  color: #37393f;
+  font-family: "Poppins";
+  font-weight: 600;
+  line-height: 1.27;
+}
+
+.subtitle__cons-b {
+  font-size: 30px;
+  margin: 0 0 18px;
+}
+
+.subtitle__cons-s {
+  font-size: 25px;
+  margin: 0 0 15px;
+}
+
+.main__subtitle-jew {
+  color: #d06b00;
+  font-size: 28px;
+  margin: 0 0 33px;
+}
+
+.main__text {
+  line-height: 1.46;
+  text-align: justify;
+}
+
+.main__text-cons-b {
+  margin: 0 0 42px;
+}
+
+.main__text-cons-s {
+  margin: 0 0 40px;
+}
+
+.main__subtitle-decor,
+.main__subtitle-info {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.27;
+}
+
+.main__subtitle-decor {
+  color: #6b77e5;
+  margin: 0 0 12px;
+}
+
+.main__subtitle-info {
+  color: #40ddb6;
+  max-width: 332px;
+  margin: 0 0 23px;
+}
+
+
+.main__item {
+  margin: 0 0 35px;
+}
+
+.main__text-info {
+  max-width: 495px;
+  color: #0e333d;
+  font-family: DM Serif Text;
+  font-size: 59px;
+  line-height: 1.46;
+  margin: 0 0 25px;
+}
+
+.main__information {
+  max-width: 563px;
+  color: #474747;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.main__box {
+  margin: 0 0 50px;
+}
+
+.main__box-j {
+  margin: 0 38px 0 0;
+  display: inline-block;
+}
+
+.main__image-j {
+  margin: 0 22px 0 0;
+}
+
+.main__image-j:last-child {
+  margin: 0;
+}
+
+
+/*===========PRACTICE=========*/
+
+.section__practice {
+  max-width: 1250px;
+}
+
+.section__practice * {
+  font-family: "AnastasiaScript", fantasy;
+  font-size: 30px;
+  color: black;
+}
+
+.practice__header,
+.practice__main,
+.practice__footer {
+  margin: 0 0 30px;
+}
+
+.practice__title {
+  font-size: 50px;
+  margin: 0 0 30px;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #ac47ff;
+}
+
+.practice__subtitle {
+  color: #6b77e5;
+  font-size: 40px;
+  background-color: #ecc9f8;
+  padding: 30px 0;
+  margin: 0 0 30px;
+}
+
+.practice__title,
+.practice__subtitle {
+  text-align: center;
+}
+
+.practice__text {
+  text-align: justify;
+  text-indent: 30px;
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+
+.practice__image {
+  display: block;
+  margin: 25px auto;
+}
+
+.practice__list {
+  margin: 0 0 40px;
+  text-align: center;
+}
+
+.practice__item {
+  margin: 0 0 20px;
+}
+
+.practice__link {
+  color: #077d4a;
+}
+
+.practice__footer-moreinfo {
+  background-color: #abeca5;
+  padding: 30px 15px;
+}
+
+.practice__footer-link {
+  color: rgb(255, 119, 0);
+}
+
+
+
+
+
+
+
+
+
+/*=======FOOTER=========*/
+
+.practice__footer-image {
+  max-width: 50px;
+}
