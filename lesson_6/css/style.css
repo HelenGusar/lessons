@@ -165,7 +165,7 @@ body {
 }
 
 
-/*===========PRACTICE=========*/
+/*=================PRACTICE==================*/
 
 .section__practice {
   max-width: 1250px;
@@ -241,13 +241,48 @@ body {
 
 
 
+/*============practice: overflow==========*/
 
+.practice__overflow {
+  font-family: "Akvitania_Modern", fantasy;
+  font-size: 18px;
+  color: black;
+  max-width: 900px;
+  margin: 0 auto;
+  max-height: 50px;
+}
 
+.practice__overflow > div {
 
+}
 
+.practice__hidden {
+  background-color: #f195d5;
+  overflow: hidden;
+  
+}
 
-/*=======FOOTER=========*/
+.practice__clip {
+  overflow: clip;
+  background-color: #c9f8f2;
+}
+
+.practice__scroll {
+  overflow: scroll;
+  background-color: #df9b9b;
+}
+
+.practice__auto {
+  overflow: auto;
+  background-color: #bce56b;
+}
+
+/*====================FOOTER====================*/
 
 .practice__footer-image {
   max-width: 50px;
+}
+
+.footer {
+  margin-top: 400px;
 }
