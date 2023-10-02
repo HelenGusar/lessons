@@ -249,17 +249,13 @@ body {
   color: black;
   max-width: 900px;
   margin: 0 auto;
-  max-height: 50px;
 }
 
-.practice__overflow > div {
-
-}
-
+.practice__clip,
+.practice__scroll,
+.practice__auto,
 .practice__hidden {
-  background-color: #f195d5;
-  overflow: hidden;
-  
+  max-height: 100px;
 }
 
 .practice__clip {
@@ -277,12 +273,13 @@ body {
   background-color: #bce56b;
 }
 
+.practice__hidden {
+  overflow: hidden;
+  background-color: #f195d5;
+}
+
 /*====================FOOTER====================*/
 
 .practice__footer-image {
   max-width: 50px;
-}
-
-.footer {
-  margin-top: 400px;
 }
