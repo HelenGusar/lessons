@@ -1,0 +1,71 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+   font-family: "Inter", sans-serif;
+   font-size: 18px;
+   color: #37393F;
+}
+
+/*======================HEADER========================*/
+
+
+
+/*=============MAIN: SECTION LICENCING===================*/
+
+.section-licencing {}
+
+.section {}
+
+.main__infobox {}
+
+.main__infobox-cub {
+   display: inline-block;
+   width: 12px;
+   height: 12px;
+   background-color:#40DDB6;
+}
+
+.main__infobox-subtitle {}
+
+.main__title {}
+
+.main__subtitle-l {}
+
+.main__text {}
+
+.main__info {}
+
+.license {}
+
+.main__box-l {}
+
+.main__box-link-l {}
+
+.main__link-l {}
+
+
+
+
+
+
+
+
+
+
+/*======================MAIN: SECTION PROJECT========================*/
+
+
+
+/*=======================MAIN: SECTION CLOTHES=======================*/
+
+
+
+/*=====================MAIN: SECTION JEWELLERY========================*/
+
+
+
+/*==========================MAIN: PRACTICE===========================*/
+
+
+/*=============================FOOTER================================*/
