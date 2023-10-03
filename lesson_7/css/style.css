@@ -7,65 +7,117 @@ body {
    color: #37393F;
 }
 
+.section {
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
 /*======================HEADER========================*/
 
+.header {
+   margin: 0 0 100px;
+}
 
 
 /*=============MAIN: SECTION LICENCING===================*/
 
-.section-licencing {}
+.section-licencing {
+   max-width: 1248px;
+}
 
-.section {}
 
-.main__infobox {}
+.licencing__infobox {
+   margin: 0 0 70px;
+   text-align: center;
+}
 
-.main__infobox-cub {
+.licencing__infobox-square {
    display: inline-block;
    width: 12px;
    height: 12px;
-   background-color:#40DDB6;
+   background-color: #40DDB6;
 }
 
-.main__infobox-subtitle {}
+.licencing__infobox-subtitle {
+   display: inline-block;
+   font-weight: 500;
+   line-height: normal;
+   margin: 0 0 16px;
+}
 
-.main__title {}
+.licencing__title,
+.licencing__subtitle {
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   line-height: 1.21;
+}
 
-.main__subtitle-l {}
+.licencing__title {
+   text-align: center;
+   font-size: 60px;
+}
 
-.main__text {}
+.licencing__subtitle {
+   font-size: 40px;
+   margin: 0 0 11px;
+}
 
-.main__info {}
+.licencing-box {
+margin: 0 0 100px;
+}
 
-.license {}
+.licencing-photography-box {
+   margin: 0 0 24px;
+}
 
-.main__box-l {}
+.licencing-photography-box:last-child {
+   margin: 0;
+}
 
-.main__box-link-l {}
+.licencing__text {
+   color: #7D7D7D;
+   line-height: 1.46;
+}
 
-.main__link-l {}
-
-
-
-
-
-
-
-
-
-
-/*======================MAIN: SECTION PROJECT========================*/
-
-
-
-/*=======================MAIN: SECTION CLOTHES=======================*/
-
-
-
-/*=====================MAIN: SECTION JEWELLERY========================*/
+.licencing__text-icon {
+   margin: 0 0 32px;
+}
 
 
+.license_one,
+.license_two,
+.licencing__info {
+   font-family: "Poppins", sans-serif;
+   font-size: 30px;
+   line-height: normal;
+}
 
-/*==========================MAIN: PRACTICE===========================*/
+.license_one {
+   padding-right: 15px;
+   font-weight: 700;
+}
+
+.license_two {
+   color: #40DDB6;
+}
 
 
-/*=============================FOOTER================================*/
+.licencing__info {
+   margin: 0 0 10px;
+}
+
+
+.licencing__box-forlink {}
+
+.licencing__box-link,
+.licencing__link {
+   color: #40DDB6;
+   line-height: 1.46;
+}
+
+.licencing-box__fonts {}
+
+
+.licencing__link {
+   font-weight: 500;
+}
