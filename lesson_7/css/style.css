@@ -160,7 +160,7 @@ margin: 0 0 100px;
 }
 
 .project__list {
-   padding-left: 30px;
+   padding-left: 65px;
 }
 
 .ul-list li{
@@ -174,3 +174,98 @@ margin: 0 0 100px;
    padding-left: 5px;
 }
    
+/*=============MAIN: SECTION CLOTHES===================*/
+
+.section-clothes {
+   color: #807D7E;
+   font-family: "Causten", sans-serif;
+   font-size: 20px;
+   max-width: 1285px;
+}
+
+.clothes__box-1 {
+   margin-bottom: 30px;
+}
+
+.clothes__box-2 {
+   margin-bottom: 25px;
+}
+
+.clothes__box-3 {
+   margin-bottom: 20px;
+}
+
+.clothes__rectangle {
+   display: inline-block;
+   width: 6px;
+   height: 28px;
+   border-radius: 10px;
+   background: #8A33FD;
+   margin-right: 15px;
+   margin-left: -25px;
+   margin-bottom: -5px;
+}
+
+.clothes__title {
+   display: inline-block;
+   color: #3C4242;
+   font-family: "Core Sans C", sans-serif;
+   font-size: 28px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 1.68;
+   letter-spacing: 0.56px;
+
+}
+
+
+.clothes__subtitle,
+.clothes__text,
+.euphoria {
+   line-height: 1.68;
+   letter-spacing: 0.4px;
+}
+
+.clothes__subtitle {
+   font-family: "Core Sans C", sans-serif;
+   font-weight: 600;
+   margin-bottom: 25px;
+}
+
+.euphoria {
+   font-weight: 700;
+}
+
+/*=============MAIN: SECTION JEWELLERY==================*/
+
+.section-jewellery {
+   font-family: "Cormorant Infant", serif;
+   max-width: 1138px;
+   font-weight: 700;
+}
+
+.jewellery__subtitle {
+   color: #D58417;
+   font-size: 20px;
+
+}
+
+.jewellery__title {
+   max-width: 503px;
+   color: #000;
+   font-size: 64px;
+}
+
+.jewellery__text {
+   max-width: 489px;
+   color: #606060;
+   font-size: 30px;
+   line-height: 1.4;
+
+.jewellery__box {
+   display: inline-block;
+}
+
+
+.jewellery__image {
+}
