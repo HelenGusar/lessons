@@ -263,10 +263,15 @@ margin: 0 0 100px;
    line-height: 1.4;
 }
 
+
 .jewellery__box {
    display: inline-block;
 }
 
+.j-box {
+
+}
 
 .jewellery__image {
+   
 }
