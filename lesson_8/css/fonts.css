@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
+
+
+@font-face {
+      font-family: "Lutsk-city";
+      src: url(../fonts/Lutsk-city.woff2) format("woff2"),
+            url(../fonts/Lutsk-city.woff) format("woff");
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: "AnastasiaScript";
+      src: url(../fonts/AnastasiaScript.woff2) format("woff2"),
+            url(../fonts/AnastasiaScript.woff) format("woff");
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+}
