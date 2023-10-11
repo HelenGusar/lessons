@@ -621,8 +621,7 @@ body {
 .footer__link-id {
    font-family: "AnastasiaScript", fantasy;
    font-size: 50px;
-}@import url('fonts.css');
-@import url('reset.css');
+}
 
 body {
    font-family: "Inter", sans-serif;
