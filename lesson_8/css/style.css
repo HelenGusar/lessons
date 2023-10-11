@@ -433,6 +433,629 @@ body {
    text-align: center;
 }
 
+.project__bigbox {
+   margin-bottom: 58px;
+}
+
+.project__bigbox1,
+.project__bigbox2 {
+   margin-bottom: 58px;
+}
+
+.project__box {
+   display: inline-block;
+   margin-right: 34px;
+}
+
+.project__box:last-child {
+   margin: 0;
+}
+
+.project__link {
+   display: inline-block;
+   margin-bottom: 24px;
+}
+
+.project__link-img {}
+
+.project__info {
+   margin-bottom: 10px;
+}
+
+.project__link-info {
+   font-family: "Poppins", sans-serif;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 1.27;
+}
+
+.project__date {
+   color: #7D7D7D;
+   font-size: 14px;
+   line-height: 1.46;
+   background: url("../img/icon/calendar.svg") 0 -3px no-repeat;
+   padding-left: 25px;
+   min-height: 23px;
+}
+
+/*=============MAIN: SECTION CLOTHES===================*/
+
+.clothes {
+   color: #807D7E;
+   font-family: "Causten", sans-serif;
+   font-size: 20px;
+   max-width: 1285px;
+}
+
+.clothes__box-1 {
+   margin-bottom: 30px;
+}
+
+.clothes__box-2 {
+   margin-bottom: 25px;
+}
+
+.clothes__box-3 {
+   margin-bottom: 20px;
+}
+
+
+
+.clothes__title {
+   display: inline-block;
+   color: #3C4242;
+   font-family: "Core Sans C", sans-serif;
+   font-size: 28px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 1.68;
+   letter-spacing: 0.56px;
+   background: url("../img/icon/rectangle.svg") 0 9px no-repeat;
+   margin-left: -25px;
+   padding-left: 21px;
+}
+
+
+.clothes__subtitle,
+.clothes__text,
+.euphoria {
+   line-height: 1.68;
+   letter-spacing: 0.4px;
+}
+
+.clothes__subtitle {
+   margin-bottom: 25px;
+}
+
+.clothes__box-more {
+   font-family: "Core Sans C", sans-serif;
+   font-weight: 600;
+}
+
+.euphoria {
+   font-weight: 700;
+}
+
+/*=============MAIN: SECTION FASHION===================*/
+
+.fashion {
+   font-family: "Causten", sans-serif;
+   color: #FFF;
+   max-width: 1270px;
+   margin: 0 auto;
+   font-size: 0;
+   margin-bottom: 50px;
+}
+
+.fashion__box1 {
+   background: url("../img/fashion1.jpg") no-repeat;
+   display: inline-block;
+   max-width: 614px;
+   min-height: 639px;
+   vertical-align: top;
+
+}
+
+.fashion__box2 {
+   background: url("../img/fashion2.jpg") right top no-repeat;
+   display: inline-block;
+   min-height: 639px;
+   max-width: 614px;
+   width: 100%;
+}
+
+
+.fashion__title {
+   font-family: "Core Sans C", sans-serif;
+   font-size: 34px;
+   font-weight: 850;
+   line-height: 50px;
+   letter-spacing: 0.208px;
+   padding: 183px 74px 0;
+   margin-bottom: 30px;
+}
+
+.fashion__text {
+   font-size: 20px;
+   font-weight: 300;
+   line-height: normal;
+   letter-spacing: 1px;
+   margin-bottom: 50px;
+   max-width: 455px;
+   margin: 0 auto;
+   margin-bottom: 50px;
+}
+
+.fashion__text p:last-child{
+   margin-bottom: 0;
+}
+
+.fashion__link {
+   color: #3C4242;
+   text-align: center;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: normal;
+   border-radius: 8px;
+   background-color: #FFF;
+   padding: 12px 44px;
+   display: inline-block;
+   margin-left: 74px;
+}
+
+
+
+
+/*=================FOOTER================*/
+
+.footer {
+   font-family: "Lutsk-city", fantasy;
+   padding-top: 60px;
+   margin-bottom: 0;
+}
+
+.footer__list {
+   margin-bottom: 40px;
+}
+
+.footer__link-id {
+   font-family: "AnastasiaScript", fantasy;
+   font-size: 50px;
+}@import url('fonts.css');
+@import url('reset.css');
+
+body {
+   font-family: "Inter", sans-serif;
+   font-size: 18px;
+   color: #7D7D7D;
+}
+
+.header,
+.section,
+.footer {
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.section {
+   margin-bottom: 100px;
+}
+/*===================HEADER======================*/
+
+.header,
+.footer {
+   font-family: "Lutsk-city", fantasy;
+   font-size: 18px;
+   line-height: 1.8;
+   color: #35a652;
+
+   padding: 30px;
+   max-width: 100%;
+   text-align: center;
+
+   background: #c5ebfc url("../img/ukr-flag.avif") center / 100% no-repeat;
+
+   margin-bottom: 50px;
+}
+
+.header__title{
+   font-size: 70px;
+   margin-bottom: 30px;
+   text-decoration: underline;
+}
+
+.header__item,
+.footer__item {
+   margin-bottom: 30px;
+}
+
+.header__link,
+.footer__link {
+   background-color: #c7f9d3;
+   padding: 10px;
+   border-radius: 10px;
+}
+
+/*=================MAIN: PRACTICE================*/
+
+.practice {
+   font-family: "AnastasiaScript", fantasy;
+   font-size: 20px;
+   color: black;
+   background: #fadef2;
+}
+
+.practice__container {
+   max-width: 1130px;
+   margin: 0 auto;
+   padding-top: 40px;
+}
+
+.practice__box {
+   margin-bottom: 40px;
+}
+
+.style-block {
+   display: block;
+   text-align: center;
+   font-size: 20px;
+}
+
+.practice__title {
+   font-size: 60px;
+   margin-bottom: 20px;
+   text-align: center;
+
+}
+
+.practice__div-box div {
+   padding: 20px;
+   margin-bottom: 15px;
+}
+
+.practice__color1 {
+   background-color: #f7ade9;
+}
+
+.practice__color2 {
+   background-color: #fee5c3;
+}
+
+.practice__color3 {
+   background-color: #b5f7ad ;
+}
+
+.practice__image1 {
+   background-image: url("../img/background-design.jpeg");
+}
+
+.practice__image2 {
+   background-image: url("../img/bg-autumn-leaves.jpeg");
+}
+
+.practice__image3 {
+   background-image: url("../img/liquid-marble-background.jpeg");
+}
+
+.practice__image4 {
+   background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(227, 19, 63, 1) 35%, rgba(53, 0, 255, 1) 100%);
+}
+
+.practice__image5 {
+   background-image: radial-gradient(circle, rgba(174, 180, 238, 1) 0%, rgba(149, 233, 148, 1) 100%);
+}
+   
+.practice__repeat1 {
+   background-image: url("../img/repeat-imag.jpeg");
+   background-repeat: no-repeat;
+   background-size: 200px;
+}
+
+.practice__repeat2 {
+   background-image: url("../img/repeat-img.jpeg");
+   background-repeat: repeat-x;
+   background-size: 200px;
+}
+
+.practice__repeat3 {
+   background-image: url("../img/repear-m-img.jpeg");
+   background-repeat: repeat-y;
+   background-size: 200px;
+
+}
+
+.practice__repeat4 {
+   background-image: url("../img/waves-pattern.webp");
+   background-repeat: repeat;
+   background-size: 200px;
+}
+
+
+.practice__repeat5 {
+   background-image: url("../img/repear-m-img.jpeg");
+   background-repeat: space;
+   background-size: 200px;
+
+}
+
+.practice__repeat6 {
+   background-image: url("../img/ukr-flag.avif");
+   background-repeat: round;
+   background-size: 200px;
+}
+
+
+.practice__position1 {
+   background-image: url("../img/repeat-imag.jpeg");
+   background-repeat: no-repeat;
+   background-size: 200px;
+   background-position: 50%;
+}
+
+.practice__position2 {
+   background-image: url("../img/repear-m-img.jpeg");
+   background-repeat: no-repeat;
+   background-size: 200px;
+   background-position: right;
+}
+
+.practice__position3 {
+   background-image: url("../img/liquid-marble-background.jpeg");
+   background-repeat: no-repeat;
+   background-size: 200px;
+   background-position: left center;
+}
+
+.practice__position4 {
+   background-image: url("../img/background-design.jpeg");
+   background-repeat: no-repeat;
+   background-size: 200px;
+   background-position: 70px 90px;
+}
+
+
+.practice__attachment1 {
+      background-image: url("../img/background-design.jpeg");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+}
+
+.practice__attachment2 {
+   background-image: url("../img/liquid-marble-background.jpeg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+
+
+.practice__size1 {
+   background-image: url("../img/bg-size.png");
+   background-repeat: no-repeat;
+   background-size: 400px;
+}
+
+.practice__size2 {
+   background-image: url("../img/bg-size2.png");
+   background-repeat: no-repeat;
+   background-size: auto 200px;
+}
+
+.practice__size3 {
+   background-image: url("../img/bg-size5.jpeg");
+   background-repeat: no-repeat;
+   background-size: 50% 50%;
+}
+
+.practice__size4 {
+   background-image: url("../img/bg-size4.jpg");
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+
+.practice__size5 {
+   background-image: url("../img/bg-size3.jpeg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+
+
+.practice__background1 {
+   background: #a4c3f5 url("../img/background-design.jpeg") center / cover no-repeat fixed;
+}
+
+.practice__background2 {
+   background: url("../img/bg-size.png") 50px 50px / 450px no-repeat,
+   url("../img/repeat-imag.jpeg") right bottom / 450px no-repeat,
+   linear-gradient(333deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 86%, rgba(252, 176, 69, 1) 100%) top right / 400px 300px;
+}
+
+.practice__list-background li{
+   min-height: 25px;
+}
+
+.practice__item-background {
+   background: url("../img/icon.png") no-repeat;
+   background-size: 20px 20px;
+   padding-left: 15px;
+   font-size: 25px;
+}
+
+
+/*=================MAIN: PLAN================*/
+
+.plan {
+   color: #37393F;
+   max-width: 703px;
+}
+
+.plan__title,
+.plan__item,
+.plan__info {
+   font-family: "Poppins", sans-serif;
+}
+
+.plan__subtitle {
+   font-weight: 500;
+   line-height: normal;
+   margin-bottom: 16px;
+   background: url("../img/icon/square.svg") 0 5px no-repeat;
+   padding-left: 18px;
+}
+
+.plan__title {
+   max-width: 414px;
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 1.21;
+   margin-bottom: 20px;
+}
+
+.plan__text {
+   max-width: 673px;
+   margin-bottom: 20px;
+}
+
+.plan__text p{
+   color: #7D7D7D;
+   line-height: 1.46;
+   margin-bottom: 20px;
+}
+
+.plan__text p:last-child {
+   margin-bottom: 0;
+}
+
+.plan__list {
+   margin-bottom: 43px;
+}
+
+.plan__item {
+   font-size: 20px;
+   line-height: normal;
+   margin-bottom: 23px;
+   background: url("../img/icon/check-icon.svg") 0 1px no-repeat;
+   padding-left: 35px;
+}
+
+.plan__item:last-child {
+   margin-bottom: 0;
+}
+
+.plan__bigbox {
+   margin-bottom: 37px;
+}
+
+.plan__box {
+   border: 1px solid #E3E3E3;
+   margin-right: 21px;
+   display: inline-block;
+   max-width: 296px;
+}
+
+.box1 {
+   padding: 32px;
+}
+
+.box2 {
+   padding: 32px 37px;
+}
+
+.plan__box:last-child {
+   margin-right: 0;
+}
+
+.plan__box p {
+   color: #7D7D7D;
+   font-size: 16px;
+   line-height: 1.35;
+   margin-bottom: 15px;
+}
+
+.plan__box p:last-child {
+   margin-bottom: 0;
+}
+
+.plan__box1 {
+   background: url("../img/icon/diploma.svg") no-repeat;
+   padding-left: 58px;
+}
+
+.plan__box2 {
+   background: url(../img/icon/cup.svg) no-repeat;
+   padding-left: 58px;
+}
+
+.plan__info {
+   font-size: 20px;
+   font-weight: 600;
+   line-height: normal;
+   margin-bottom: 5px;
+}
+
+.plan__info-text {
+   min-width: 164px;
+}
+
+.plan__btn-link {
+   color: #FFF;
+   text-align: center;
+   font-weight: 600;
+   line-height: normal;
+   text-transform: capitalize;
+   display: inline-block;
+   background: #6B77E5;
+   padding: 22px 27px;
+}
+
+
+/*=================MAIN: PROJECT================*/
+
+.project {
+   color: #37393F;
+   max-width: 1265px;
+   margin: 0 auto;
+}
+
+.span-title {
+   width: 12px;
+   height: 12px;
+   display: inline-block;
+   background: #40DDB6;
+   margin-right: 6px;
+}
+
+.project__subtitle {
+   font-weight: 500;
+   line-height: normal;
+   margin-bottom: 14px;
+}
+
+.project__title {
+   font-family: "Poppins", sans-serif;
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 1.21;
+   margin-bottom: 14px;
+}
+
+.project__subtitle,
+.project__title {
+   text-align: center;
+}
+
+.project__boxtitle {
+   margin-bottom: 47px;
+}
+
+.project__text p{
+   color: #7D7D7D;
+   line-height: 1.46;
+   max-width: 800px;
+   margin: 0 auto;
+   text-align: center;
+}
+
 .project__bigbox {}
 
 .project__box {
