@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=BioRhyme:regular,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+
+@font-face {
+   font-family: "AnastasiaScript";
+   src: url("../fonts/AnastasiaScript.woff2") format("woff2");
+   src: url("../fonts/AnastasiaScript.woff") format("woff");
+   font-style: normal;
+   font-weight: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Lutsk-city";
+   src: url("../fonts/Lutsk-city.woff2") format("woff2");
+   src: url("../fonts/Lutsk-city.woff") format("woff");
+   font-style: normal;
+   font-weight: normal;
+   font-display: swap;
+}
