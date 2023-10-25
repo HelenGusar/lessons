@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('reset.css');
+
+body {
+   background-image: url('../img/bg.jpg');
+   font-family: "Pacifico", serif;
+   font-size: 22px;
+   text-align: center;
+}
+
+.header {
+   padding: 20px;
+}
+
+.header__title {
+   font-size: 40px;
+   text-transform: uppercase;
+   margin-bottom: 40px;
+}
+
+.main {
+   margin-bottom: 40px;
+}
+
+.main__box {
+   margin-bottom: 30px;
+   margin-right: 25px;
+   display: inline-block;
+   border: 2px solid rgb(9, 36, 242);
+   border-radius: 30px;
+   background-color: rgba(242, 242, 242, 0.634);
+}
+
+main__box:last-child {
+   margin-bottom: 0;
+}
+
+.main__img,
+.main__img-w {
+   padding: 30px 90px;
+   display: block;
+   margin-bottom: 20px;
+}
+
+.main__img {
+   width: 300px;
+}
+
+.main__img-w {
+   max-width: 400px;
+}
+
+.main__text {
+   padding-bottom: 15px;
+}
+
+.footer__arrow {
+   max-width: 150px;
+}
