@@ -44,7 +44,7 @@
       font-family: "Core Sans C";
       src: url("../fonts/coresansc-bold.woff2") format("woff2"),
             url("../fonts/coresansc-bold.woff") format("woff");
-      font-weight: 650;
+      font-weight: 600;
       font-style: normal;
       font-display: swap;
 }
@@ -53,7 +53,8 @@
       font-family: "Core Sans C";
       src: url("../fonts/CoreSansC-heavy.woff2") format("woff2"),
             url("../fonts/CoreSansC-heavy.woff") format("woff");
-      font-weight: 850;
+      font-weight: 800;
       font-style: normal;
       font-display: swap;
 }
+
