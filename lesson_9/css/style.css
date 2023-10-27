@@ -22,7 +22,7 @@ body {
 
 .header__title {
    margin-bottom: 50px;
-   font-size: 80px;c
+   font-size: 80px;
 }
 
 .header__list li,
@@ -422,7 +422,7 @@ body {
 
 .span-voice {
    font-weight: 700;
-   text-shadow: #acbdfa ;
+   text-shadow: #acbdfa;
 }
 
 p:not(:last-child) {
