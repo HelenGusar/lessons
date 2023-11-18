@@ -1,0 +1,122 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+
+}
+
+[class*="__container"] {
+   max-width: 1270px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+/*=====header======*/
+
+.header {
+   text-align: center;
+   margin-bottom: 40px;
+   font-family: 'Comfortaa', sans-serif;
+   font-size: 18px;
+   color: black;
+}
+
+.header__title {
+   font-size: 70px;
+}
+
+.header__menu {
+   
+}
+
+
+.header__item {
+   font-size: 30px;
+}
+
+.header__item:not(:last-child) {
+   margin-bottom: 10px;
+}
+
+.header__item::before {
+   content: '';
+   width: 15px;
+   height: 15px;
+   background: radial-gradient(circle, rgba(63, 251, 225, 1) 0%, rgba(82, 124, 179, 1) 50%, rgba(126, 70, 252, 1) 100%);
+}
+
+.header__item:hover {
+   border: 1px solid transparent;
+   background-color: aquamarine;
+   display: inline-block;
+   padding: 15px;
+}
+
+.header__link {}
+
+/*=======main: practice=======*/
+
+.main__practice {
+   margin-bottom: 30px;
+}
+
+.practice {
+   font-family: 'Comfortaa', sans-serif;
+   font-size: 18px;
+   color: black;
+}
+
+.practice__title {
+   font-size: 50px;
+   font-weight: 700;
+}
+
+.practice__title,
+.practice__subtitle {
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.practice__block {
+   
+}
+
+.practice__items {
+   
+}
+
+.practice__items--red {
+
+}
+
+.practice__items--dark-blue {
+
+}
+
+.practice__items--orange {
+
+}
+
+.practice__text {
+   margin-bottom: 20px;
+   text-align: justify;
+   text-indent: 30px;
+}
+
+.practice__subtitle {
+   font-size: 40px;
+   border: 2px solid transparent;
+   padding: 30px 20px;
+}
+
+.practice__subtitle--first {
+   background: linear-gradient(0deg, rgba(195, 34, 57, 1) 0%, rgba(253, 71, 45, 1) 100%);
+}
+
+.practice__subtitle--second {
+   background: linear-gradient(0deg, rgba(54, 34, 195, 1) 0%, rgba(64, 45, 253, 1) 100%);
+}
+
+.practice__subtitle--third {
+   background: linear-gradient(0deg, rgba(255, 141, 22, 1) 0%, rgba(253, 217, 45, 1) 100%);
+}
