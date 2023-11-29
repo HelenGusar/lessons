@@ -52,12 +52,6 @@ body {
    color: aliceblue;
 }
 
-.header__nav {
-   
-}
-
-.header__list {}
-
 .header__item {
    display: inline-block;
    position: relative;
@@ -115,8 +109,6 @@ body {
    padding-left: 10px;
    visibility: hidden;
 }
-
-.practice-nav__item {}
 
 .practice-nav__link {
    background-color: #ff7f7f;
@@ -269,11 +261,6 @@ span {
    background-color: rgba(153, 50, 204, 0.372);
 }
 
-.practice__cube--darkolivegreen,
-.practice__cube--darkorange,
-.practice__cube--darkorchid {
-}
-
 /*Z-INDEX*/
 
 .practice__zindex-box {
@@ -320,17 +307,8 @@ height: 90px;
    z-index: 3;
    width: 450px;
 }
-.box__text {
-   
-}
-
-
 
 /*FIXED*/
-
-.practice__fixed-box {
-   
-}
 
 .box-fixed {
    border: 2px solid white;
@@ -409,12 +387,6 @@ height: 90px;
 }
 /*WEBSYTE-CONSULTING*/
 
-.page {}
-
-.page__consulting {}
-
-.consulting {}
-
 .consulting__container {
    max-width: 1250px;
    margin: 0 auto;
@@ -449,8 +421,6 @@ height: 90px;
    top: 243.5px;
    left: 107.5px;
 }
-
-.social {}
 
 .social__item {
    visibility: hidden;
@@ -513,14 +483,6 @@ height: 90px;
    padding-bottom: 20px;
    font-family: 'Comfortaa', sans-serif;
    font-size: 18px;
-}
-
-.footer__arrow-up {
-
-}
-
-.footer__link {
-
 }
 
 .footer__link img {
