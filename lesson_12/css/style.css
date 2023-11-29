@@ -24,7 +24,6 @@ body {
    font-family: 'Comfortaa', sans-serif;
    font-size: 18px;
    color: black;
-   background-color: aqua;
    z-index: 2;
    position: relative;
 }
@@ -34,7 +33,6 @@ body {
 }
 
 .header {
-   background-color: aquamarine;
    padding: 20px 0;
 }
 
@@ -74,9 +72,12 @@ body {
 }
 
 .header__link {
-   background-color: cornflowerblue;
+   background-color: #6495ed;
 }
 
+.header__link:hover {
+   background: linear-gradient(309deg, rgba(13, 20, 88, 1) 0%, rgba(100, 149, 237, 1) 50%, rgba(4, 51, 181, 1) 100%);
+}
 
 .header__sub-menu {
    position: absolute;
@@ -100,7 +101,11 @@ body {
 }
 
 .header__sub-link {
-   background-color: hotpink;
+   background-color: #ff69b4;
+}
+
+.header__sub-link:hover {
+   background: linear-gradient(309deg, rgba(96, 13, 78, 1) 0%, rgba(255, 105, 180, 1) 50%, rgba(96, 13, 78, 1) 100%);
 }
 
 .practice-nav__menu {
@@ -118,6 +123,10 @@ body {
 }
 
 /*=======main: practice=======*/
+
+section {
+   margin-bottom: 20px;
+}
 
 .page__practice {
    margin: 30px;
@@ -392,12 +401,19 @@ height: 90px;
 
 .card__social {
    position: absolute;
+   top: 243.5px;
+   left: 107.5px;
 }
 
 .social {}
 
 .social__item {
    visibility: hidden;
+   display: inline-block;
+}
+
+.social__item:not(:last-child) {
+   margin-right: 13px;
 }
 
 .social__link img {
@@ -407,7 +423,6 @@ height: 90px;
 
 .card:hover .social__item {
    visibility: visible;
-   position: relative;
 }
 
 .consulting__card:hover::before {
@@ -444,4 +459,24 @@ height: 90px;
    font-family: 'Inter', sans-serif;
    font-size: 18px;
    line-height: 1.35;
+}
+
+/*FOOTER*/
+
+.footer {
+   text-align: center;
+   padding-bottom: 20px;
+}
+
+.footer__arrow-up {
+
+}
+
+.footer__link {
+
+}
+
+.footer__link img {
+   width: 50px;
+   height: 50px;
 }
