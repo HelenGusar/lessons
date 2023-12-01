@@ -76,47 +76,217 @@
          <section class="page__practice practice">
             <div class="practice__container">
 
-               <h2 class="practice__title">My practice: 2D-transform</h2>
-               <h3 class="practice__subtitle">Що вміє...</h3>
-
-               <!--translate-->
-               <div class="practice__box box"></div>
-               <h3 class="box__title">...translate?</h3>
-
-               <div class="box__inner">
-                  <div class="box__info">
-                     <div class="box__item box__item--shadow">
-                        <div class="box__cube box__item--color box__item--translate"></div>
+               <div class="practice__block">
+                  <h2 class="practice__title">My practice: 2D-transform</h2>
+                  <h3 class="practice__subtitle">Що вміє...</h3>
+                  
+                  <!--translate-->
+                  <div class="practice__box box">
+                     <h3 class="box__title">...translate?</h3>
+                  
+                     <div class="box__inner inner">
+                        <div class="inner__item inner__item--translate inner__item--color-tr"></div>
+                        <div class="inner__text">
+                           <p>Зміщує елемент на нове місце відносно початкового положення вправо та вниз через координати X та Y.</p>
+                        </div>
+                     </div>
+                  
+                     <div class="box__inner inner">
+                        <div class="inner__item inner__item--translate-x inner__item--color-tr"></div>
+                        <div class="inner__text">
+                           <p>Зміщує елемент на нове місце відносно початкового положення через координати X.</p>
+                        </div>
+                     </div>
+                  
+                     <div class="box__inner inner">
+                        <div class="inner__item inner__item--translate-y inner__item--color-tr"></div>
+                        <div class="inner__text">
+                           <p>Зміщує елемент на нове місце відносно початкового положення через координати Y.</p>
+                        </div>
                      </div>
                   </div>
-                  <div class="box__text">
-                     <p>Зміщує елемент на нове місце відносно початкового положення вправо та вниз через координати X та Y.</p>
+                  
+                  <!--scale-->
+                  
+                  <div class="practice__box box">
+                     <h3 class="box__title">...scale?</h3>
+                  
+                     <div class="box__inner inner">
+                        <div class="inner__item inner__item--scale-mirror inner__item--color-sc"></div>
+                        <div class="inner__text">
+                           <p>Масштабує елементи через координати X та Y. Значення від 0 до 1, де 1 — цілий обʼєкт. Значення за замовчуванням для `scale` - `transform: scale(1);`</p>
+                           </p>
+                        </div>
+                     </div>
+                  
+                     <div class="box__inner inner">
+                        <div class="inner__item inner__item--scale-big inner__item--color-sc"></div>
+                        <div class="inner__text">
+                           <p>Масштабує елементи: робить більшими. Масштабує елементи через координати X та Y. Значення від 0 до 1, де 1 — цілий обʼєкт.</p>
+                        </div>
+                     </div>
+                  
+                     <div class="box__inner inner">
+                        <div class="inner__item inner__item--scale-small inner__item--color-sc"></div>
+                        <div class="inner__text">
+                           <p>Масштабує елементи: робить меньшими. Масштабує елементи через координати X та Y. Значення від 0 до 1, де 1 — цілий обʼєкт.</p>
+                        </div>
+                     </div>
+                  
+                  </div>
+                  
+                  <!--rotate-->
+                  
+                  <div class="practice__box box">
+                     <h3 class="box__title">...rotate?</h3>
+                  
+                     <div class="box__inner inner">
+                        <div class="inner__item inner__item--rotate inner__item--color-rt"></div>
+                        <div class="inner__text">
+                           <p>Повертає елементи, додатні значення повертають елемент по годинниковій стрілці, від’ємні проти годинникової стрілки.</p>
+                        </div>
+                     </div>
+                  
+                     <div class="box__inner inner">
+                        <div class="inner__item inner__item--rotate-x inner__item--color-rt"></div>
+                        <div class="inner__text">
+                           <p>Обертання по осi “х” виглядає наче як ви обертаєте листок паперу по осі “x”</p>
+                        </div>
+                     </div>
+                  
+                     <div class="box__inner inner">
+                        <div class="inner__item inner__item--rotate-y inner__item--color-rt"></div>
+                        <div class="inner__text">
+                           <p>Обертання по осi “y” виглядає наче як ви обертаєте листок паперу по осі “y”</p>
+                        </div>
+                     </div>
+                  </div>
+                  
+                  <!--skew-->
+                  
+                  <div class="practice__box box">
+                     <h3 class="box__title">...skew?</h3>
+                  
+                     <div class="box__inner inner">
+                        <div class="inner__item inner__item--skew inner__item--color-sk"></div>
+                        <div class="inner__text">
+                           <p>Дозволяє нахилити елемент в обох напрямках, змінюючи його геометричний вигляд та створюючи вигнуту площину нахилу.</p>
+                        </div>
+                     </div>
+                  
+                     <div class="box__inner inner">
+                        <div class="inner__item inner__item--skew-xy inner__item--color-sk"></div>
+                        <div class="inner__text">
+                           <p>Для використання skew() вам потрібно передати два аргументи: перше значення вказує нахил в горизонтальному напрямку, а друге - в вертикальному напрямку.</p>
+                        </div>
+                     </div>
+                  
+                  
+                  
+                  </div>
+                  
+                  <!--transform-->
+                  
+                  <div class="practice__box box">
+                     <h3 class="box__title">...transform?</h3>
+                  
+                     <div class="box__inner inner">
+                        <div class="inner__item inner__item--transform-first inner__item--color-trn"></div>
+                        <div class="inner__text">
+                           <p>Дозволяє об'єднати кілька функцій 2D-трансформацій в одній, заміна matrix.</p>
+                        </div>
+                     </div>
+                  
+                     <div class="box__inner inner">
+                        <div class="inner__item inner__item--transform-second inner__item--color-trn"></div>
+                        <div class="inner__text">
+                           <p>Дозволяє об'єднати кілька функцій 2D-трансформацій в одній, заміна matrix.</p>
+                        </div>
+                     </div>
+               
+                  </div>
+                  
+                  <!--transform-origin-->
+                  <div class="practice__box box">
+                     <h3 class="box__title">...transform-origin?</h3>
+                  
+                     <div class="box__inner inner">
+                        <div class="inner__item inner__item--origin-first"></div>
+                        <div class="inner__text">
+                           <p>Дозволяє змістити центр трансформації, щодо якого відбувається зміна положення/розміру/форми елемента.</p>
+                        </div>
+                     </div>
+                  
+                     <div class="box__inner inner">
+                        <div class="inner__item inner__item--origin-second"></div>
+                        <div class="inner__text">
+                           <p>Дозволяє змістити центр трансформації, щодо якого відбувається зміна положення/розміру/форми елемента.</p>
+                        </div>
+                     </div>
+                  
+                     <div class="box__inner inner">
+                        <div class="inner__item inner__item--origin-third"></div>
+                        <div class="inner__text">
+                           <p>Дозволяє змістити центр трансформації, щодо якого відбувається зміна положення/розміру/форми елемента.</p>
+                        </div>
+                     </div>
+                  
                   </div>
                </div>
 
-               <div class="practice__box box">
-                  <div class="box__info">
-                     <div class="box__item box__item--shadow">
-                        <div class="box__cube box__item--color box__item--translate-x"></div>
+               <div class="practice__block">
+                  <h2 class="practice__title">My practice: 3D-transform</h2>
+                  <h3 class="practice__subtitle">Що вміє...</h3>
+               
+                  <!--translate3D-->
+                  <div class="practice__box box">
+                     <h3 class="box__title">...translate3D?</h3>
+               
+                     <div class="box__inner inner">
+                        <div class="inner__item inner__item--translate-z inner__item--color-trz"></div>
+                        <div class="inner__text">
+                           <p>Переміщення елемента в 3D-просторі.
+                           Крім осі X та Y додається вісь Z.</p>
+                        </div>
                      </div>
                   </div>
-                  <div class="box__text">
-                     <p>Зміщує елемент через координати X</p>
-                  </div>
-               </div>
 
-               <div class="practice__box box">
-                  <div class="box__info">
-                     <div class="box__item box__item--shadow">
-                        <div class="box__cube box__item--color box__item--translate-y"></div>
+                  <!--scale3D-->
+                  <div class="practice__box box">
+                     <h3 class="box__title">...scale3D?</h3>
+
+                     <div class="box__inner inner">
+                        <div class="inner__item inner__item--scale-z inner__item--color-scz"></div>
+                        <div class="inner__text">
+                           <p>Масштабує елементи через координати X,Y,Z. Значення від 0 до 1, де 1 — цілий обʼєкт.</p>
+                        </div>
                      </div>
                   </div>
-                  <div class="box__text">
-                     <p>Зміщує елемент через координати Y</p>
-                  </div>
-               </div>
 
-               <!--scale-->
+                  <!--rotate3D-->
+                  <div class="practice__box box">
+                     <h3 class="box__title">...rotate3D?</h3>
+                  
+                     <div class="box__inner inner">
+                        <div class="inner__item inner__item--rotate-z inner__item--color-roz"></div>
+                        <div class="inner__text">
+                           <p>Повертає елементи, додатні значення повертають елемент по годинниковій стрілці, від’ємні проти годинникової стрілки.</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!--transform-style-->
+                  <div class="practice__box box">
+                     <h3 class="box__title">...transform-style?</h3>
+                  
+                     <div class="box__inner inner inner--style">
+                        <div class="inner__item inner__item--style inner__item--color-stl"></div>
+                        <div class="inner__text">
+                           <p>Визначає, як дочірні елементи мають відображатися у 3D-просторі. Задається батьківському елементу разом з `perspective`.</p>
+                        </div>
+                     </div>
+                  </div>
+
             </div>
          </section>
       </main>
