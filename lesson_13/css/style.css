@@ -69,34 +69,61 @@ body {
    text-align: center;
 }
 
-.practice__box {}
+.practice__box:not(:last-child) {
+   margin-bottom: 50px;
+}
 
 .box__info,
 .box__text {
    display: inline-block;
+   vertical-align: middle;
 }
 
 .box__item,
 .box__cube {
    display: inline-block;
    border: 1px solid transparent;
-   width: 100px;
-   height: 100px;
+   width: 200px;
+   height: 200px;
+}
+
+.box-info {
+   
 }
 
 .box__item--shadow {
    background-color: rgba(128, 128, 128, 0.167);
+   margin-right: 100px;
 }
 
 .box__item--color {
    width: 100%;
    height: 100%;
+   border-color: black;
 }
 
-.box__item--aqua {
-   background-color: aqua;
+.box__item--translate,
+.box__item--translate-x,
+.box__item--translate-y {
+   background: linear-gradient(0deg, rgba(22, 29, 255, 1) 0%, rgba(45, 247, 253, 1) 100%);
+}
+
+.box__item--translate {
    transform: translate(20px, 20px);
 }
 
+.box__item--translate-x {
+   transform: translateX(40px);
+}
+
+.box__item--translate-y {
+   transform: translateY(40px);
+}
+
 .box__text {
+   
+}
+
+.box__text p{
+   max-width: 500px;
 }
