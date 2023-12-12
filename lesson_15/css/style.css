@@ -1,0 +1,63 @@
+@import url(fonts.css);
+@import url(reset.css);
+
+
+
+body {
+	font-family: "Causten", sans-serif;
+	font-size: 18px;
+	color: #807D7E;
+}
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+[class*="__container"] {
+	max-width: 1275px;
+	margin: 0 auto;
+	padding: 0 15px;	
+}
+
+/**HEADER**/
+
+.header {}
+
+.header__container {}
+
+.header__logo {}
+
+.header__search {}
+
+.header__user-area {}
+
+.user-area {}
+
+.user-area__lang {}
+
+.lang {}
+
+.lang__item {}
+
+.lang__link {}
+
+.lang__submenu {}
+
+.submenu {}
+
+.submenu__item {}
+
+.submenu__link {}
+
+.user-area__btn {}
+
+.btn {}
+
+.btn__item {}
+
+.btn__item--login {}
+
+.btn__link {}
+
+.btn__item--sign {}
