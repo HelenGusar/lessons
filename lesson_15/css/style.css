@@ -12,6 +12,12 @@ body {
 .wrapper {
 	overflow: clip;
 	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper > main {
+	flex-grow: 1;
 }
 
 [class*="__container"] {
@@ -26,15 +32,44 @@ body {
 
 .header__container {}
 
-.header__logo {}
+.header__body {
+	display: flex;
+	justify-content: space-between;
+	padding: 34px 0 31px;
+}
+
+.header__info,
+.header__user-area {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
+}
+
+.header__info {
+	
+}
+
+.header__user-area {
+	
+}
+
+.header__logo {
+	flex: 0 0 91px;
+}
+
+.header__logo img {
+	width: 100%;
+}
+
 
 .header__search {}
 
-.header__user-area {}
-
 .user-area {}
 
-.user-area__lang {}
+.user-area__lang {
+	position: relative;
+}
 
 .lang {}
 
@@ -42,15 +77,38 @@ body {
 
 .lang__link {}
 
-.lang__submenu {}
+.lang__submenu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	visibility: hidden;
+	padding-top: 10px;
+}
 
-.submenu {}
+.submenu {
+	
+}
 
-.submenu__item {}
+.submenu__item {
+	
+}
 
-.submenu__link {}
+.submenu__item:not(:last-child) {
+	margin-bottom: 10px;
+}
 
-.user-area__btn {}
+.lang__item:hover .lang__submenu {
+	visibility: visible;
+}
+
+.submenu__link {
+	text-align: center;
+}
+
+.user-area__btn {
+	display: flex;
+	justify-content: space-between;
+}
 
 .btn {}
 
@@ -61,3 +119,4 @@ body {
 .btn__link {}
 
 .btn__item--sign {}
+
