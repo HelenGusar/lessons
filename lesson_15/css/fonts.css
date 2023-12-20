@@ -29,7 +29,17 @@
    font-family: "Core Sans C";
    src: url(../fonts/CoreSansC-semibold.woff2) format("woff2"),
       url(../fonts/CoreSansC-semibold.woff) format("woff");
-   font-weight: 650;
+   font-weight: 600;
    font-style: normal;
    font-display: swap;
 }
+
+@font-face {
+   font-family: "Core Sans C";
+   src: url(../fonts/CoreSansC-medium.woff2) format("woff2"),
+      url(../fonts/CoreSansC-medium.woff) format("woff");
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+}
+
