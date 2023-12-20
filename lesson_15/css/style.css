@@ -465,15 +465,20 @@ section:not(:last-child) {
 .order__menu {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 10px;
+	margin-bottom: 50px;
 	border-bottom: 3px solid #F6F6F6;
 }
 
-.order__item:hover {
+.order__item {
 	padding: 12px 53px;
+}
+
+.order__item:hover {
 	background-color: #F6F6F6;
 	border-radius: 10px 10px 0 0;
+	border-bottom: 3px solid #3C4242;
 }
+
 
 .order__link {
 	color: #3C4242;
@@ -486,49 +491,120 @@ section:not(:last-child) {
 
 .order__box {}
 
-.order__info {}
+.order__info {
+	font-size: 14px;
+	line-height: normal;
+	padding: 28px 47px;
+	border-radius: 8px;
+	background: #F6F6F6;
+	margin: 30px 0;
+}
+
 
 .info-order {}
 
-.info-order__title {}
+.info-order__title {
+	margin-bottom: 14px;
+}
 
-.info-order__link {}
+.info-order__link {
+	color: #3C4242;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+}
 
-.info-order__text {}
+.info-order__text span {
+	color: #807D7E;
+	font-weight: 600;
+}
 
-.order__benefits {}
+.info-order__text p {
+	color: #BEBCBD;
+}
 
-.benefits {}
+.info-order__text p:not(:last-child) {
+	margin-bottom: 10px;
+}
 
-.benefits__content {}
+.info-order__text {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+}
 
-.content {}
+.info-order__text--right {
+	text-align: right;
+}
 
-.benefits__link-img {}
 
-.link-img {}
+.order__benefits {
+	display: flex;
+	justify-content: space-between;
+}
 
-.benefits__info {}
 
-.info {}
+.benefits__content {
+	display: flex;
+	column-gap: 25px;
+}
 
-.benefits__text {}
 
-.text {}
+.benefits__link-img {
+	flex: 0 0 96px;
+}
+
+.benefits__link-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.benefits__text {
+	font-size: 14px;
+	font-weight: 600;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	row-gap: 5px;
+}
+
+.benefits__text p {
+	color: #BEBCBD;
+}
+
+.benefits__text span {
+	color: #3C4242;
+}
+
+.benefits__text div {
+	color: #807D7E;
+}
 
 .benefits__subtitle {}
 
-.subtitle {}
 
-.benefits__subtitle-link {}
+.benefits__subtitle-link {
+	color: #3C4242;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
 
 .subtitle-link {}
 
 .wishlist__price {}
 
-.wishlist__btn-link {}
+.benefits__btn-link {
+	color: #FFF;
+	font-size: 18px;
+	font-weight: 500;
+	border-radius: 8px;
+	background: #8A33FD;
+	padding: 14px 28px;
+	flex-grow: 0;
+	align-self: center;
+}
 
-.btn-link {}
 
 
 
