@@ -24,6 +24,10 @@ body {
 	padding: 0 15px;
 }
 
+section {
+	margin-bottom: 30px;
+}
+
 /**HEADER**/
 
 .header {
@@ -316,11 +320,10 @@ body {
 	flex-basis: 18px;
 	min-height: 14px;
 	background: url("../img/icon/product-arrow.svg") center no-repeat;
-	transform: translateX(-10px);
 }
 
 .product__link-arrow:hover {
-	animation: move-arrow 1s ease-in-out infinite alternate;
+	animation: move-arrow 0.6s ease-in-out infinite alternate;
 }
 	
 @keyframes move-arrow {
@@ -328,12 +331,8 @@ body {
 			transform: translateX(0);
 		}
 
-		50% {
-			transform: translateX(-10px);
-		}
-
 		100% {
-			transform: translateX(0);
+			transform: translateX(-10px);
 		}
 	}
 
@@ -391,6 +390,11 @@ section:not(:last-child) {
 .wishlist__img-cross img {
 	width: 100%;
 	height: 100%;
+	transition: all 0.2s;
+}
+
+.wishlist__img-cross:hover img {
+	transform: rotate(90deg);
 }
 
 .wishlist__link-img {
@@ -634,25 +638,43 @@ section:not(:last-child) {
 	padding: 14px 28px;
 	flex-grow: 0;
 	align-self: center;
+	transition: all 0.3s;
+}
+
+.benefits__btn-link:hover {
+	background: #9e59f8;
 }
 
 
 
 
+/**FOOTER**/
 
-
-
-
-
-
-
-
-
-
-/*====================================================================*/
-/*потім видали код нижче*/
-main {
-	padding-bottom: 50px;
+.footer {
+	background: linear-gradient(94deg, rgba(138, 51, 253, 0.6377144607843137) 11%, rgba(219, 37, 226, 0.6377144607843137) 50%, rgba(138, 51, 253, 0.6741290266106443) 96%);
+	color: #3C4242;
 }
 
-/*====================================================================*/
+.footer__container {
+	
+}
+
+.footer__info {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 30px 0;
+}
+
+.footer__logo {}
+
+.footer__menu {
+	display: flex;
+	justify-content: space-between;
+	gap: 50px;
+}
+
+.footer__item {}
+
+.footer__link {}
+
