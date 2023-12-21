@@ -316,7 +316,26 @@ body {
 	flex-basis: 18px;
 	min-height: 14px;
 	background: url("../img/icon/product-arrow.svg") center no-repeat;
+	transform: translateX(-10px);
 }
+
+.product__link-arrow:hover {
+	animation: move-arrow 1s ease-in-out infinite alternate;
+}
+	
+@keyframes move-arrow {
+		0% {
+			transform: translateX(0);
+		}
+
+		50% {
+			transform: translateX(-10px);
+		}
+
+		100% {
+			transform: translateX(0);
+		}
+	}
 
 /**WISHLIST**/
 
@@ -469,14 +488,20 @@ section:not(:last-child) {
 	border-bottom: 3px solid #F6F6F6;
 }
 
-.order__item {
+
+.order__item,
+.order__item--active {
 	padding: 12px 53px;
+	border-radius: 10px 10px 0 0;
 }
 
-.order__item:hover {
+
+
+.order__item:hover,
+.order__item--active {
 	background-color: #F6F6F6;
-	border-radius: 10px 10px 0 0;
 	border-bottom: 3px solid #3C4242;
+	margin-bottom: -3px;
 }
 
 
@@ -489,7 +514,11 @@ section:not(:last-child) {
 	letter-spacing: 0.44px;
 }
 
-.order__box {}
+.order__box {
+	border-bottom: 1px solid #EDEEF2;
+	padding-bottom: 30px;
+}
+
 
 .order__info {
 	font-size: 14px;
@@ -552,6 +581,8 @@ section:not(:last-child) {
 
 .benefits__link-img {
 	flex: 0 0 96px;
+	width: 96px;
+	height: 96px;
 }
 
 .benefits__link-img img {
