@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 16</title>
+</head>
+<body>
+   <div class="wrapper">
+
+      <header class="header">
+         <h1 class="header__title">Forms</h1>
+      </header>
+
+
+      <main class="page">
+         <section class="page__contacts contacts">
+            <div class="contacts__container">
+               <h3 class="contacts__subtitle">Contact Us</h3>
+               
+               <h2 class="contacts__title">Request A Call Back !</h2>
+
+               <form class="contacts__form form" action="#" enctype="multipart/form-data">
+                     <div class="form__body">
+                        <div class="form__item">
+                           <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form__item">
+                           <input type="phone" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form__item">
+                           <input type="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form__item">
+                           <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+
+                        <div class="form__item form__item--textarea">
+                           <textarea name="message" placeholder="Message..."></textarea>
+                        </div>
+                     </div>
+                     <button class="contacts__button" type="submit">Submit</button>
+                  </div>
+               </form>
+            </div>
+            
+               
+
+         </section>
+
+      </main>
+
+
+      <footer class="footer"></footer>
+
+
+   </div>
+
+</body>
+</html>
