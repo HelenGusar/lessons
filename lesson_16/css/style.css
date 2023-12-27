@@ -100,7 +100,9 @@
 }
 
 .form__item--textarea textarea {
-
+   max-width: 100%;
+   min-height: 225px;
+   resize: vertical;
 }
 
 .contacts__button {
