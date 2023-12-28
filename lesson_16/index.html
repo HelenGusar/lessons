@@ -41,12 +41,101 @@
                         </div>
                      </div>
                      <button class="contacts__button" type="submit">Submit</button>
-                  </div>
                </form>
             </div>
-            
-               
+         </section>
 
+         <section class="page__info info">
+            <div class="info__container">
+
+               <h2 class="info__title">My Info</h2>
+               <h3 class="info__subtitle">Add Address</h3>
+
+               <div class="info__form form-info" enctype="multipart/form-data" action="#">
+                  <div class="form-info__body">
+                     <div class="form-info__item">
+                        <label class="form-info__label" for="name">First Name*</label>
+                        <input class="form-info__input" id="name" autocomplete="on" placeholder="First Name" name="name" type="text">
+                     </div>
+                        <!--Country-->
+                     <div class="form-info__item">
+                        <label class="form-info__label" for="country">Country / Region*</label>
+                        <input class="form-info__input" id="country" autocomplete="on" placeholder="Country / Region" name="country" type="text" >
+                     </div>
+                        <!--Street Address-->
+                     <div class="form-info__item">
+                        <label class="form-info__label" for="street">Street Address*</label>
+                        <input class="form-info__input" id="street" autocomplete="on" placeholder="House number and street name" name="street" type="text">
+                     </div>
+                        <!--City-->
+                     <div class="form-info__item">
+                        <label class="form-info__label" for="city">City*</label>
+                        <input class="form-info__input" id="city" autocomplete="on" placeholder="Town / City" name="city" type="text">
+                     </div>
+                        <!--Phone-->
+                     <div class="form-info__item">
+                        <label class="form-info__label" for="phone">Phone*</label>
+                        <input class="form-info__input" id="phone" autocomplete="on" placeholder="Phone" name="phone" type="text">
+                     </div>
+                        <!--Last name-->
+                     <div class="form-info__item">
+                        <label class="form-info__label" for="last-name">Last Name*</label>
+                        <input class="form-info__input" id="last-name" autocomplete="on" placeholder="Last Name" name="last-name" type="text">
+                     </div>
+                        <!--Company name-->
+                     <div class="form-info__item">
+                        <label class="form-info__label" for="company">Company Name</label>
+                        <input class="form-info__input" id="company" autocomplete="on" placeholder="Company (optional)" name="company" type="text">
+                     </div>
+                        <!--Apt, suite, unit-->
+                     <div class="form-info__item">
+                        <label class="form-info__label" for="apt">Apt, suite, unit</label>
+                        <input class="form-info__input" id="apt" autocomplete="on" placeholder="apartment, suite, unit, etc. (optional)" name="apt" type="text">
+                     </div>
+                        <!--select State-->
+                     <div class="form-info__item">
+                        <label class="form-info__label" for="state"></label>
+                        <select name="state" id="state">
+                           <option value="0" disabled selected>State</option>
+                           <option value="1">Arizona</option>
+                           <option value="2">California</option>
+                           <option value="3">Florida</option>
+                           <option value="4">Iowa</option>
+                           <option value="5">Louisiana</option>
+                        </select>
+                     </div>
+
+                     <!--Postal code-->
+                     <div class="form-info__item">
+                        <label class="form-info__label" for="code">Postal Code*</label>
+                        <input class="form-info__input" id="code" autocomplete="on" placeholder="Postal Code" name="code" type="text">
+                     </div>
+                     <!--Delivery instruction-->
+                     <div class="form-info__item form-info__item--textarea">
+                        <label class="form-info__label" for="instruction">Delivery Instruction</label>
+                        <textarea name="instruction" placeholder="Delivery Instruction" id="instruction"></textarea>
+                     </div>
+                  </div>
+               </form>
+
+               <!--Checkbox-->
+               <form class="info__checkbox checkbox-info">
+                  <div class="checkbox-info__item">
+                     <input class="checkbox-info__input" id="shipping-address" autocomplete="on" placeholder="First Name" name="shipping-address" type="checkbox">
+                     <label class="checkbox-info__label" for="shipping-address">Set as default shipping address</label>
+                  </div>
+                  <div class="checkbox-info__item">
+                     <input class="checkbox-info__input" id="billing-address" autocomplete="on" placeholder="First Name" name="billing-address" type="checkbox">
+                     <label class="checkbox-info__label" for="billing-address">Set as default billing address</label>
+                  </div>
+               </form>
+               
+                  <!--Buttons-->
+               <div class="info__button button-info">
+                  <button class="button-info__item" type="submit">Save</button>
+                  <button class="button-info__item" type="reset">Cancel</button>
+               </div>
+            </div>
          </section>
 
       </main>
