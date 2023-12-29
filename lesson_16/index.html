@@ -58,45 +58,42 @@
                         <label class="form-info__label" for="name">First Name*</label>
                         <input class="form-info__input" id="name" autocomplete="on" placeholder="First Name" name="name" type="text">
                      </div>
+                        <!--Last name-->
+                     <div class="form-info__item">
+                        <label class="form-info__label" for="last-name">Last Name*</label>
+                        <input class="form-info__input" id="last-name" autocomplete="on" placeholder="Last Name" name="last-name" type="text">
+                     </div>
                         <!--Country-->
                      <div class="form-info__item">
                         <label class="form-info__label" for="country">Country / Region*</label>
                         <input class="form-info__input" id="country" autocomplete="on" placeholder="Country / Region" name="country" type="text" >
+                     </div>
+                        <!--Company name-->
+                     <div class="form-info__item">
+                           <label class="form-info__label" for="company">Company Name</label>
+                           <input class="form-info__input" id="company" autocomplete="on" placeholder="Company (optional)" name="company" type="text">
                      </div>
                         <!--Street Address-->
                      <div class="form-info__item">
                         <label class="form-info__label" for="street">Street Address*</label>
                         <input class="form-info__input" id="street" autocomplete="on" placeholder="House number and street name" name="street" type="text">
                      </div>
+                        <!--Apt, suite, unit-->
+                     <div class="form-info__item">
+                           <label class="form-info__label" for="apt">Apt, suite, unit*</label>
+                           <input class="form-info__input" id="apt" autocomplete="on" placeholder="apartment, suite, unit, etc. (optional)" name="apt" type="text">
+                     </div>
                         <!--City-->
                      <div class="form-info__item">
                         <label class="form-info__label" for="city">City*</label>
                         <input class="form-info__input" id="city" autocomplete="on" placeholder="Town / City" name="city" type="text">
                      </div>
-                        <!--Phone-->
-                     <div class="form-info__item">
-                        <label class="form-info__label" for="phone">Phone*</label>
-                        <input class="form-info__input" id="phone" autocomplete="on" placeholder="Phone" name="phone" type="text">
-                     </div>
-                        <!--Last name-->
-                     <div class="form-info__item">
-                        <label class="form-info__label" for="last-name">Last Name*</label>
-                        <input class="form-info__input" id="last-name" autocomplete="on" placeholder="Last Name" name="last-name" type="text">
-                     </div>
-                        <!--Company name-->
-                     <div class="form-info__item">
-                        <label class="form-info__label" for="company">Company Name</label>
-                        <input class="form-info__input" id="company" autocomplete="on" placeholder="Company (optional)" name="company" type="text">
-                     </div>
-                        <!--Apt, suite, unit-->
-                     <div class="form-info__item">
-                        <label class="form-info__label" for="apt">Apt, suite, unit</label>
-                        <input class="form-info__input" id="apt" autocomplete="on" placeholder="apartment, suite, unit, etc. (optional)" name="apt" type="text">
-                     </div>
+
+
                         <!--select State-->
                      <div class="form-info__item">
-                        <label class="form-info__label" for="state"></label>
-                        <select name="state" id="state">
+                        <label class="form-info__label" for="state">State*</label>
+                        <select class="form-info__select" name="state" id="state">
                            <option value="0" disabled selected>State</option>
                            <option value="1">Arizona</option>
                            <option value="2">California</option>
@@ -106,11 +103,18 @@
                         </select>
                      </div>
 
-                     <!--Postal code-->
+                        <!--Phone-->
+                     <div class="form-info__item">
+                        <label class="form-info__label" for="phone">Phone*</label>
+                        <input class="form-info__input" id="phone" autocomplete="on" placeholder="Phone" name="phone" type="text">
+                     </div>
+                        <!--Postal code-->
                      <div class="form-info__item">
                         <label class="form-info__label" for="code">Postal Code*</label>
                         <input class="form-info__input" id="code" autocomplete="on" placeholder="Postal Code" name="code" type="text">
                      </div>
+
+
                      <!--Delivery instruction-->
                      <div class="form-info__item form-info__item--textarea">
                         <label class="form-info__label" for="instruction">Delivery Instruction</label>
