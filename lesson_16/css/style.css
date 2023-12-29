@@ -31,9 +31,14 @@ section {
 
 /***HEADER***/
 
-.header {}
+.header {
+   margin-bottom: 50px;
+}
 
-.header__title {}
+.header__title {
+   font-size: 40px;
+   text-align: center;
+}
 
 
 /***CONTACTS***/
@@ -152,7 +157,6 @@ section {
    color: #3C4242;
    font-family: "Core Sans C", sans-serif;
    font-size: 22px;
-   font-style: normal;
    font-weight: 600;
    line-height: 1.52;
    letter-spacing: 0.44px;
@@ -167,20 +171,25 @@ section {
 
 .form-info__body {
    display: flex;
-   flex-direction: column;
    flex-wrap: wrap;
 }
 
-.form-info__item {}
+.form-info__item {
+   flex: 1 1 45%;
+}
+
+.form-info__item:not(:last-child) {
+   margin-bottom: 31px;
+}
 
 .form-info__label {
+   display: block;
    color: #3C4242;
-      font-family: Causten;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-      letter-spacing: 0.36px;
+   font-family: "Causten", sans-serif;
+   font-weight: 600;
+   line-height: normal;
+   letter-spacing: 0.36px;
+   margin-bottom: 10px;
 }
 
 .form-info__input {
@@ -188,13 +197,14 @@ section {
    padding: 17.8px 22.3px;
    border-radius: 8px;
    background: #F6F6F6;
+   color: #807D7E;
+   font-size: 16px;
+   line-height: normal;
+   max-width: 426px;
 }
 
 .form-info__input input {
-   color: #807D7E;
-   text-align: center;
-   font-size: 16px;
-   line-height: normal;
+   
 }
 
 .form-info__item--textarea {}
