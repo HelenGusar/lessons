@@ -210,26 +210,32 @@ section {
 }
 
 .form-info__select {
-   position: relative;
    appearance: none;
 }
 
-.form-info__select::after {
+.form-info__item--select {
+   position: relative;
+}
+
+.form-info__item--select::after {
    content: '';
-   appearance: auto;
    background: url(../img/icon/arrow-down.svg) 0 0 no-repeat;
    width: 22px;
    height: 22px;
    position: absolute;
-   top: 0;
-   right: 0;
+   top: 55%;
+   right: 20px;
 }
 
-.form-info__input input {
-   
+.form-info__item--textarea {
+   max-width: 100%;
 }
 
-.form-info__item--textarea {}
+.form-info__textarea {
+   width: 100%;
+   resize: vertical;
+   min-height: 149px;
+}
 
 .info__checkbox {
 
