@@ -15,6 +15,7 @@
 
 
       <main class="page">
+
          <section class="page__contacts contacts">
             <div class="contacts__container">
                <h3 class="contacts__subtitle">Contact Us</h3>
@@ -40,7 +41,11 @@
                            <textarea name="message" placeholder="Message..."></textarea>
                         </div>
                      </div>
-                     <button class="contacts__button" type="submit">Submit</button>
+
+                     <div class="contacts__item">
+                        <button class="contacts__button" type="submit">Submit</button>
+                     </div>
+            
                </form>
             </div>
          </section>
@@ -51,49 +56,49 @@
                <h2 class="info__title">My Info</h2>
                <h3 class="info__subtitle">Add Address</h3>
 
-               <div class="info__form form-info" enctype="multipart/form-data" action="#">
+               <form class="info__form form-info" enctype="multipart/form-data" action="#">
                   <div class="form-info__body">
                         <!--First name-->
                      <div class="form-info__item">
-                        <label class="form-info__label" for="name">First Name*</label>
-                        <input class="form-info__input" id="name" autocomplete="on" placeholder="First Name" name="name" type="text">
+                        <label class="form-info__label label-all" for="name">First Name*</label>
+                        <input class="form-info__input input-all" id="name" autocomplete="on" placeholder="First Name" name="name" type="text">
                      </div>
                         <!--Last name-->
                      <div class="form-info__item">
-                        <label class="form-info__label" for="last-name">Last Name*</label>
-                        <input class="form-info__input" id="last-name" autocomplete="on" placeholder="Last Name" name="last-name" type="text">
+                        <label class="form-info__label label-all" for="last-name">Last Name*</label>
+                        <input class="form-info__input input-all" id="last-name" autocomplete="on" placeholder="Last Name" name="last-name" type="text">
                      </div>
                         <!--Country-->
                      <div class="form-info__item">
-                        <label class="form-info__label" for="country">Country / Region*</label>
-                        <input class="form-info__input" id="country" autocomplete="on" placeholder="Country / Region" name="country" type="text" >
+                        <label class="form-info__label label-all" for="country">Country / Region*</label>
+                        <input class="form-info__input input-all" id="country" autocomplete="on" placeholder="Country / Region" name="country" type="text" >
                      </div>
                         <!--Company name-->
                      <div class="form-info__item">
-                           <label class="form-info__label" for="company">Company Name</label>
-                           <input class="form-info__input" id="company" autocomplete="on" placeholder="Company (optional)" name="company" type="text">
+                           <label class="form-info__label label-all" for="company">Company Name</label>
+                           <input class="form-info__input input-all" id="company" autocomplete="on" placeholder="Company (optional)" name="company" type="text">
                      </div>
                         <!--Street Address-->
                      <div class="form-info__item">
-                        <label class="form-info__label" for="street">Street Address*</label>
-                        <input class="form-info__input" id="street" autocomplete="on" placeholder="House number and street name" name="street" type="text">
+                        <label class="form-info__label label-all" for="street">Street Address*</label>
+                        <input class="form-info__input input-all" id="street" autocomplete="on" placeholder="House number and street name" name="street" type="text">
                      </div>
                         <!--Apt, suite, unit-->
                      <div class="form-info__item">
-                           <label class="form-info__label" for="apt">Apt, suite, unit*</label>
-                           <input class="form-info__input" id="apt" autocomplete="on" placeholder="apartment, suite, unit, etc. (optional)" name="apt" type="text">
+                           <label class="form-info__label label-all" for="apt">Apt, suite, unit*</label>
+                           <input class="form-info__input input-all" id="apt" autocomplete="on" placeholder="apartment, suite, unit, etc. (optional)" name="apt" type="text">
                      </div>
                         <!--City-->
                      <div class="form-info__item">
-                        <label class="form-info__label" for="city">City*</label>
-                        <input class="form-info__input" id="city" autocomplete="on" placeholder="Town / City" name="city" type="text">
+                        <label class="form-info__label label-all" for="city">City*</label>
+                        <input class="form-info__input input-all" id="city" autocomplete="on" placeholder="Town / City" name="city" type="text">
                      </div>
 
 
                         <!--select State-->
                      <div class="form-info__item form-info__item--select">
                         <label class="form-info__label" for="state">State*</label>
-                        <select class="form-info__select" name="state" id="state">
+                        <select class="form-info__select select-all" name="state" id="state">
                            <option value="state" disabled selected>State</option>
                            <option value="Arizona">Arizona</option>
                            <option value="California">California</option>
@@ -105,13 +110,13 @@
 
                         <!--Phone-->
                      <div class="form-info__item">
-                        <label class="form-info__label" for="phone">Phone*</label>
-                        <input class="form-info__input" id="phone" autocomplete="on" placeholder="Phone" name="phone" type="text">
+                        <label class="form-info__label label-all" for="phone">Phone*</label>
+                        <input class="form-info__input input-all" id="phone" autocomplete="on" placeholder="Phone" name="phone" type="text">
                      </div>
                         <!--Postal code-->
                      <div class="form-info__item">
-                        <label class="form-info__label" for="code">Postal Code*</label>
-                        <input class="form-info__input" id="code" autocomplete="on" placeholder="Postal Code" name="code" type="text">
+                        <label class="form-info__label label-all" for="code">Postal Code*</label>
+                        <input class="form-info__input input-all" id="code" autocomplete="on" placeholder="Postal Code" name="code" type="text">
                      </div>
 
 
@@ -126,7 +131,7 @@
                <!--Checkbox-->
                <form class="info__checkbox checkbox-info">
                   <div class="checkbox-info__item">
-                     <input class="checkbox-info__input" id="shipping-address" autocomplete="on" placeholder="First Name" name="shipping-address" type="checkbox">
+                     <input class="checkbox-info__input" id="shipping-address"  name="shipping-address" type="checkbox">
                      <label class="checkbox-info__label" for="shipping-address">Set as default shipping address</label>
                   </div>
                   <div class="checkbox-info__item">
@@ -137,9 +142,125 @@
                
                   <!--Buttons-->
                <div class="info__button button-info">
-                  <button class="button-info__item" type="submit">Save</button>
-                  <button class="button-info__item" type="reset">Cancel</button>
+                  <button class="button-info__item button-info__item--submit" type="submit">Save</button>
+                  <button class="button-info__item button-info__item--reset" type="reset">Cancel</button>
                </div>
+            </div>
+         </section>
+
+         <section class="page__checkout checkout">
+            <div class="checkout__container">
+
+               <div class="checkout__box">
+                  <h2 class="checkout__title">Check Out</h2>
+                  <h3 class="checkout__subtitle--billing subtitle">Billing Details</h3>
+                  
+                  <form class="checkout__form form-checkout" enctype="multipart/form-data" action="#">
+                     <div class="form-checkout__body">
+                  
+                        <!--First name-->
+                        <div class="form-checkout__item">
+                           <label for="f-name" class="form-checkout__label label-all">First Name*</label>
+                           <input type="text" class="form-checkout__input input-all" id="f-name" autocomplete="on" placeholder="First Name" name="f-name" type="text">
+                        </div>
+                  
+                        <!--Last name-->
+                        <div class="form-checkout__item">
+                           <label for="l-name" class="form-checkout__label label-all">Last Name*</label>
+                           <input type="text" class="form-checkout__input input-all" id="l-name" autocomplete="on" placeholder="Last Name" name="l-name">
+                        </div>
+                  
+                        <!--Country / Region-->
+                        <div class="form-checkout__item">
+                           <label for="country" class="form-checkout__label label-all">Country / Region*</label>
+                           <input type="text" class="form-checkout__input input-all" id="country" placeholder="Country / Region*" autocomplete="on" name="country">
+                        </div>
+                  
+                        <!--Company Name-->
+                        <div class="form-checkout__item">
+                           <label for="company" class="form-checkout__label label-all">Company Name*</label>
+                           <input type="text" class="form-checkout__input input-all" id="company" autocomplete="on" placeholder="Company (optional)" name="company">
+                        </div>
+                  
+                        <!--Street Address-->
+                        <div class="form-checkout__item">
+                           <label for="str-adress" class="form-checkout__label label-all">Street Address*</label>
+                           <input type="text" class="form-checkout__input input-all" id="str-adress" autocomplete="on" placeholder="House number and street name" name="str-adress">
+                        </div>
+                  
+                        <!--Apt, suite, unit-->
+                        <div class="form-checkout__item">
+                           <label for="apt-unit" class="form-checkout__label label-all">Apt, suite, unit*</label>
+                           <input type="text" class="form-checkout__input input-all" id="apt-unit" autocomplete="on" placeholder="apartment, suite, unit, etc. (optional)" name="apt-unit">
+                        </div>
+                  
+                        <div class="form-checkout__box">
+                           <!--City-->
+                           <div class="form-checkout__item form-checkout__item--small">
+                              <label for="city-town" class="form-checkout__label label-all">City*</label>
+                              <input type="text" class="form-checkout__input input-all" id="city-town" autocomplete="on" placeholder="Town / City" name="city-town">
+                           </div>
+                  
+                           <!--selected State-->
+                           <div class="form-checkout__item form-checkout__item--small form-checkout__item--select">
+                              <label for="state-checkout" class="form-checkout__label label-all">State*</label>
+                              <select name="state-checkout" id="state-checkout" class="form-checkout__select select-all">
+                                 <option value="state" disabled selected>State</option>
+                                 <option value="Arizona">Arizona</option>
+                                 <option value="California">California</option>
+                                 <option value="Florida">Florida</option>
+                                 <option value="Iowa">Iowa</option>
+                                 <option value="Louisiana">Louisiana</option>
+                              </select>
+                           </div>
+                  
+                           <!--Postal Code-->
+                           <div class="form-checkout__item form-checkout__item--small">
+                              <label for="postal-code" class="form-checkout__label label-all">Postal Code*</label>
+                              <input type="text" class="form-checkout__input input-all" id="postal-code" autocomplete="on" placeholder="Postal Code" name="postal-code">
+                           </div>
+                        </div>
+                        <!--Phone-->
+                        <div class="form-checkout__item">
+                           <label for="phone-checkout" class="form-checkout__label label-all">Phone*</label>
+                           <input type="tel" class="form-checkout__input input-all" id="phone-checkout" autocomplete="on" placeholder="Phone" name="phone-checkout">
+                        </div>
+                     </div>
+                  </form>
+                  
+                  <button href="#" class="checkout__button">Continue to delivery</button>
+                  
+                  <!--Checkbox-->
+                  <form action="#" class="checkout__checkbox checkbox-checkout">
+                     <div class="checkbox-checkout__item">
+                        <input type="checkbox" name="faster-checkout" class="checkbox-checkout__input" id="faster-checkout">
+                        <label for="faster-checkout" class="checkbox-checkout__label">Save my information for a faster checkout</label>
+                     </div>
+                  </form>
+               </div>
+                  
+
+               <div class="checkout__box">
+                  <h3 class="checkout__subtitle-shipping subtitle">Shipping Address</h3>
+                  <div class="checkout__label">Select the address that matches your card or payment method.</div>
+
+                  <form action="#" class="checkout__address address" enctype="multipart/form-data">
+
+                     <div class="address__item">
+                        <input type="radio" class="address__input" name="address" id="address" value="save-address">
+                        <label for="address" class="address__label">Same as Billing address</label>
+                     </div>
+
+                     <div class="address__item">
+                        <input type="radio" class="address__input" name="address" id="address" value="different-address">
+                        <label for="address" class="address__label">Use a different shipping address</label>
+                     </div>
+
+                  </form>
+               </div>
+
+
+
             </div>
          </section>
 
