@@ -153,7 +153,7 @@
 
                <div class="checkout__box">
                   <h2 class="checkout__title">Check Out</h2>
-                  <h3 class="checkout__subtitle--billing subtitle">Billing Details</h3>
+                  <h3 class="checkout__subtitle-billing subtitle">Billing Details</h3>
                   
                   <form class="checkout__form form-checkout" enctype="multipart/form-data" action="#">
                      <div class="form-checkout__body">
@@ -244,22 +244,106 @@
                   <h3 class="checkout__subtitle-shipping subtitle">Shipping Address</h3>
                   <div class="checkout__label">Select the address that matches your card or payment method.</div>
 
-                  <form action="#" class="checkout__address address" enctype="multipart/form-data">
+                  <form action="#" class="checkout__address address info-box" enctype="multipart/form-data">
 
                      <div class="address__item">
-                        <input type="radio" class="address__input" name="address" id="address" value="save-address">
-                        <label for="address" class="address__label">Same as Billing address</label>
+                        <input type="radio" class="address__input" name="address" id="address-s" value="save-address">
+                        <label for="address-s" class="address__label">Same as Billing address</label>
                      </div>
 
                      <div class="address__item">
-                        <input type="radio" class="address__input" name="address" id="address" value="different-address">
-                        <label for="address" class="address__label">Use a different shipping address</label>
+                        <input type="radio" class="address__input" name="address" id="addres-d" value="different-address">
+                        <label for="addres-d" class="address__label">Use a different shipping address</label>
                      </div>
 
                   </form>
                </div>
 
 
+               <div class="checkout__box">
+                  <h3 class="checkout__subtitle-method subtitle">Shipping Method</h3>
+
+                  <div class="checkout__info info-box">
+                     <div class="info-box__text item-decor">Arrives by Monday, June 7</div>
+                     <div class="info-box__item item-decor">
+                        <div class="info-box__text-box">
+                           <div class="info-box__text">Delivery Charges</div>
+                           <div class="info-box__text">$5.00</div>
+                        </div>
+                        <div class="info-box__note">Additional fess may apply</div>
+                     </div>
+                     
+                  </div>
+               </div>
+
+
+
+               <div class="checkout__box">
+                  <h3 class="checkout__subtitle-payment subtitle">Payment Method</h3>
+                  <div class="checkout__label">All transactions are secure and encrypted.</div>
+
+                  <div class="checkout__info checkout__info--margin info-box payment">
+
+                     <div class="payment__item">
+                        <form action="#" class="payment__form form-payment" enctype="multipart/form-data">
+                           <div class="form-payment__item">
+                              <input type="radio" class="form-payment__input" name="payment" id="payment-card" value="credit-card">
+                              <label for="payment-card" class="form-payment__label">Credit Card</label>
+                              <div class="form-payment__note">We accept all major credit cards.</div>
+                           </div>
+                           
+                        </form>
+
+                        <div class="payment__box">
+                           <a href="#" class="payment__link">
+                              <img src="img/payment/gpay.svg" alt="g-pay">
+                           </a>
+                           <a href="#" class="payment__link">
+                              <img src="img/payment/visa.svg" alt="visa">
+                           </a>
+                           <a href="#" class="payment__link">
+                              <img src="img/payment/paypal.svg" alt="pay-pal">
+                           </a>
+                           <a href="#" class="payment__link">
+                              <img src="img/payment/paypass.svg" alt="pay-pass">
+                           </a>
+                        </div>
+
+                        <form action="#" class="payment__form form-payment " enctype="multipart/form-data">
+                           <div class="form-payment__item">
+                              <input class="form__input" placeholder="Card number" name="card-number" type="number">
+                              <input type="type" class="form-payment__input" name="name-of-card" placeholder="Name of card">
+                              <input class="form__input" autocomplete="on" name="date" type="tel" placeholder="Expiration date (MM/YY)">
+                              <input type="password" placeholder="Security Code">
+                           </div>
+                              
+                        </form>
+                     </div>
+                     
+                     <div class="payment__item">
+                        <form action="#" class="payment__form form-payment" enctype="multipart/form-data">
+                           <div class="form-payment__item">
+                              <input type="radio" class="form-payment__input" name="payment" id="payment-cash" value="cash">
+                              <label for="payment-cash" class="form-payment__label">Cash on delivery</label>
+                           </div>
+                           <div class="form-payment__note">Pay with cash upon delivery.</div>
+                        </form>
+                     </div>
+
+                     <div class="payment__item">
+                        <form action="#" class="payment__form form-payment" enctype="multipart/form-data">
+                           <div class="form-payment__item">
+                              <input type="radio" class="form-payment__input" name="payment" id="payment-paypol" value="paypol">
+                              <label for="payment-paypol" class="form-payment__label">Paypol</label>
+                           </div>
+                        </form>
+                     </div>
+                     
+
+                  </div>
+
+                  <button type="submit" class="checkout__button">Pay Now</button>
+               </div>
 
             </div>
          </section>
