@@ -294,18 +294,14 @@ section {
    transition: all 0.3s;
 }
 
-.button-info__item:hover {
-   background-color: ;
-}
-
 .button-info__item--submit {
    background: #8A33FD;
    color: #FFFFFF;
 }
 
 .button-info__item--submit:hover {
-   background: #F6F6F6;
-      color: #807D7E;
+   background: #09ca2c;
+      color: #7d7d80;
 }
 
 .button-info__item--reset {
@@ -314,8 +310,8 @@ section {
 }
 
 .button-info__item--reset:hover {
-   background: #8A33FD;
-      color: #FFFFFF;
+   background: #09ca2c;
+      color: #7d7d80;
 }
 
 /***************************CHECK OUT********************************/
