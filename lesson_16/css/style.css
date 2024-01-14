@@ -123,8 +123,12 @@ section {
    font-weight: 600;
    line-height: normal;
    text-transform: capitalize;
+   transition: 0.3s all;
 }
 
+.form__button:hover {
+   background: #4354eb;
+}
 
 /**************************INFO********************************/
 
@@ -287,6 +291,11 @@ section {
    font-weight: 700;
    line-height: normal;
    border-radius: 8px;
+   transition: all 0.3s;
+}
+
+.button-info__item:hover {
+   background-color: ;
 }
 
 .button-info__item--submit {
@@ -294,9 +303,19 @@ section {
    color: #FFFFFF;
 }
 
+.button-info__item--submit:hover {
+   background: #F6F6F6;
+      color: #807D7E;
+}
+
 .button-info__item--reset {
    background: #F6F6F6;
    color: #807D7E;
+}
+
+.button-info__item--reset:hover {
+   background: #8A33FD;
+      color: #FFFFFF;
 }
 
 /***************************CHECK OUT********************************/
@@ -390,6 +409,11 @@ section {
    border-radius: 8px;
    background: #8A33FD;
    padding: 16px 20px;
+   transition: all 0.3s;
+}
+
+.checkout__button:hover {
+   background: #33fd47;
 }
 
 .checkout__checkbox {
