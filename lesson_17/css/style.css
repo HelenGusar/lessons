@@ -1,0 +1,187 @@
+@import url('reset.css');
+@import url('fonts.css');
+
+body {
+   font-family: "Inter", sans-serif ;
+}
+
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.wrapper>main {
+   flex-grow: 1;
+}
+
+[class*="__container"] {
+   max-width: 1270px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+section {
+   margin-bottom: 50px;
+}
+
+/*******************************HEADER**************************/
+
+.header {
+   margin-bottom: 60px;
+}
+
+.header__title {
+   font-size: 60px;
+   text-align: center;
+}
+
+
+/***********************SECTION: RINGS**********************/
+
+.page__rings {
+   background: #FEFAF4 url(../img/rings/rings-flower.webp) 100% 107% /12% no-repeat;
+   padding-bottom: 114px;
+   }
+
+
+.rings__container {
+   max-width: 1195px;
+}
+
+.rings__title {
+   font-family: "DM Serif Text", serif;
+   font-size: 58px;
+   margin-bottom: 30px;
+}
+
+.rings__info {
+   color: #606060;
+   font-size: 20px;
+   line-height: 1.8;
+   margin-bottom: 65px;
+   display: inline-block;
+}
+
+.rings__columns {
+   display: flex;
+   column-gap: 50px;
+}
+
+.rings__item {
+   flex: 0 1 33.3%;
+   max-width: 357px;
+}
+
+.rings__link img {
+   width: 100%;
+   height: 100%;
+   aspect-ratio: 357 / 240;
+   background-color: #511809;
+   object-fit: cover;
+   margin-bottom: 20px;
+}
+
+.rings__subtitle {
+   color: #000;
+   font-family: "DM Serif Text",serif;
+   font-size: 24px;
+   line-height: 1.2;
+   margin-bottom: 30px;
+}
+
+.rings__text {
+   margin-bottom: 25px;
+}
+
+.rings__text p {
+   font-size: 16px;
+   line-height: 1.6;
+}
+
+.rings__box {}
+
+.rings__more {
+   color: #F55529;
+   font-family: Inter;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 800;
+   line-height: 1.5;
+   display: flex;
+   justify-content: space-between;
+}
+
+.rings__more::after {
+   content: '';
+   background: url(../img/icon/arrow-right-orange.svg);
+   width: 24px;
+   height: 24px;
+}
+
+
+/***********************SECTION: GOLD**********************/
+
+.page__gold {
+   font-family: "Cormorant Infant", serif;
+}
+
+.gold__container {
+   max-width: 1170px;
+}
+
+.gold__title {
+   color: #291403;
+   font-family: "DM Serif Text";
+   font-size: 58px;
+   line-height: 1;
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+.gold__info {
+   color: #818181;
+   text-align: center;
+   font-size: 30px;
+   font-weight: 700;
+   line-height: 1.4;
+   margin-bottom: 65px;
+}
+
+.gold__columns {
+   display: flex;
+   justify-content: space-between;
+}
+
+.gold__item {
+
+}
+
+.gold__link {}
+
+.gold__subtitle,
+.gold__price {
+   color: #000;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 1.4;
+   text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************FOOTER**********************/
+
+.footer {}
