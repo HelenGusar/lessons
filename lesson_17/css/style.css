@@ -33,6 +33,7 @@ section {
 }
 
 .header__title {
+   font-family: "DM Serif Text", serif;
    font-size: 60px;
    text-align: center;
 }
@@ -42,7 +43,7 @@ section {
 
 .page__rings {
    background: #FEFAF4 url(../img/rings/rings-flower.webp) 100% 107% /12% no-repeat;
-   padding-bottom: 114px;
+   padding: 125px 0 114px;
    }
 
 
@@ -160,7 +161,7 @@ section {
 
 .gold__link {}
 
-.gold__subtitle,
+.gold__label,
 .gold__price {
    color: #000;
    font-size: 24px;
@@ -170,9 +171,76 @@ section {
 }
 
 
+/***********************SECTION: MINI**********************/
 
+.page__mini {
+   background: #0E333D;
+   font-family: "Raleway", sans-serif;
+}
 
+.mini {}
 
+.mini__container {
+   max-width: 1200px;
+}
+
+.mini__title {
+   color: #FFF;
+   font-family: "DM Serif Text", serif;
+   font-size: 48px;
+   line-height: 1.27;
+   text-align: center;
+}
+
+.mini__subtitle {
+   color: #EBEBEB;
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 1.27;
+   text-align: center;
+}
+
+.mini__list {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   max-width: 350px;
+}
+
+.mini__item {
+   color: #FFF;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 1.27;
+}
+
+.mini__link {
+
+}
+
+.mini__link img{
+   background-color: #1c5e70;
+   aspect-ratio: 270 / 271;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 5px;
+}
+
+.mini__columns {
+   display: flex;
+   gap: 30px;
+}
+
+.mini__label,
+.mini__price {
+   color: #FFF;
+   font-family: "Cormorant Infant", serif;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 1.4;
+}
 
 
 
