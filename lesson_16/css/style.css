@@ -245,6 +245,7 @@ section {
    display: flex;
    flex-direction: column;
    gap: 15px;
+   position: relative;
 }
 
 .checkbox-info__input:checked+.checkbox-info__label::before {
@@ -301,6 +302,10 @@ section {
    transition: all 0.3s;
 }
 
+.button-info__item:hover {
+   background-color: ;
+}
+
 .button-info__item--submit {
    background: #8A33FD;
    color: #FFFFFF;
@@ -317,8 +322,8 @@ section {
 }
 
 .button-info__item--reset:hover {
-   background: #09ca2c;
-      color: #7d7d80;
+   background: #8A33FD;
+      color: #FFFFFF;
 }
 
 /***************************CHECK OUT********************************/
@@ -426,6 +431,14 @@ section {
 .checkbox-checkout {}
 
 .checkbox-checkout__item {}
+
+.checkbox-checkout__input:checked+.checkbox-checkout__label::before {
+   content: '';
+   background: url(../img/icon/checkbox.svg) center / cover no-repeat;
+   width: 20px;
+   height: 20px;
+   flex: 0 0 20px;
+}
 
 .checkbox-checkout__input {
    position: absolute;
