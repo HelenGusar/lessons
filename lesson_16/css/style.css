@@ -247,6 +247,13 @@ section {
    gap: 15px;
 }
 
+.checkbox-info__input:checked+.checkbox-info__label::before {
+   content: '';
+   background: url(../img/icon/checkbox.svg) center / cover no-repeat;
+   width: 20px;
+   height: 20px;
+   flex: 0 0 20px;
+}
 
 .checkbox-info__input {
    position: absolute;
