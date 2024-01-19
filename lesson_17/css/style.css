@@ -201,7 +201,7 @@ section {
 .gold__columns {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
+   justify-content: center;
    margin-bottom: 76px;
 }
 
@@ -209,12 +209,13 @@ section {
    display: flex;
    flex-direction: column;
    gap: 25px;
-   flex: 1 1 270px;
+   flex: 0 1 270px;
 }
 
 .gold__body {
    display: flex;
    flex-direction: column;
+   justify-content: space-between;
    gap: 15px;
 }
 
@@ -237,15 +238,63 @@ section {
 
    background: #FF7A49;
    padding: 12px 42px;
+   transition: all 0.3s;
 }
 
 
 @media (max-width: 1112px) {
+   .gold__columns {
+      column-gap: 15px;
+      justify-content: space-between;
+   }
    .gold__item {
-      flex: 1 1 30%;
+      flex: 0 1 32%;
    }
 }
 
+
+@media (max-width: 873px) {
+   .gold__columns {
+      justify-content: space-around;
+   }
+   .gold__item {
+      flex: 1 1 48%;
+   }
+   .gold__body {
+      align-items: center;
+   }
+   .gold__info {
+      margin-bottom: 35px;
+   }
+
+}
+
+@media (max-width: 586px) {
+   .gold__columns {
+      column-gap: 10px;
+   }
+   .gold__item {
+      flex: 1 1 100%;
+   }
+   .gold__title {
+      font-size: 50px;
+   }
+}
+
+@media (max-width: 503px) {
+   .gold__title {
+      font-size: 40px;
+   }
+   .gold__info {
+      font-size: 20px;
+   }
+}
+
+@media (any-hover: hover) {
+   .gold__btn-link:hover {
+      background: #d54f1e;
+   }
+}
 
 /***********************SECTION: MINI**********************/
 
