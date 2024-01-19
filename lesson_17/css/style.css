@@ -37,6 +37,7 @@ section {
    font-family: "DM Serif Text", serif;
    font-size: 60px;
    text-align: center;
+   padding: 5px 0;
 }
 
 
@@ -68,11 +69,12 @@ section {
 
 .rings__columns {
    display: flex;
+   flex-wrap: wrap;
    gap: 48px;
 }
 
 .rings__item {
-   flex: 0 1 357px;
+   max-width: 357px;
 }
 
 .rings__link img {
@@ -129,6 +131,15 @@ section {
    }
 }
 
+@media (max-width: 1196px) {
+   .rings__columns {
+      flex: 1 1 45%;
+      column-gap: 4px;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+}
+
 @media (max-width: 991px) {
    .rings__columns {
       flex: 1 1 45%;
@@ -139,13 +150,13 @@ section {
 
 @media (max-width: 809px) {
    .rings__columns {
-      gap: 15px;
+      flex: 1 1 70%;
    }
 }
 
-@media (max-width: 670px) {
+@media (max-width: 758px) {
    .rings__columns {
-      flex: 1 1 100%;
+      flex: 1 1 95%;
       flex-wrap: wrap;
       justify-content: center;
    }
@@ -168,6 +179,7 @@ section {
 
 .gold__container {
    max-width: 1170px;
+   text-align: center;
 }
 
 .gold__title {
@@ -175,13 +187,11 @@ section {
    font-family: "DM Serif Text";
    font-size: 58px;
    line-height: 1;
-   text-align: center;
    margin-bottom: 30px;
 }
 
 .gold__info {
    color: #818181;
-   text-align: center;
    font-size: 30px;
    font-weight: 700;
    line-height: 1.4;
@@ -190,15 +200,24 @@ section {
 
 .gold__columns {
    display: flex;
+   flex-wrap: wrap;
    justify-content: space-between;
    margin-bottom: 76px;
 }
 
 .gold__item {
-
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+   flex: 1 1 270px;
 }
 
-.gold__link {}
+.gold__body {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
 
 .gold__label,
 .gold__price {
@@ -218,6 +237,13 @@ section {
 
    background: #FF7A49;
    padding: 12px 42px;
+}
+
+
+@media (max-width: 1112px) {
+   .gold__item {
+      flex: 1 1 30%;
+   }
 }
 
 
