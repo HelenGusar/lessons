@@ -64,7 +64,6 @@ section {
    font-size: 20px;
    line-height: 1.8;
    margin-bottom: 65px;
-   display: inline-block;
 }
 
 .rings__columns {
@@ -121,7 +120,6 @@ section {
    background: url(../img/icon/arrow-right-orange.svg);
    width: 24px;
    height: 24px;
-   transition: transform 0.5s ease;
 }
 
 @media (max-width: 1220px) {
@@ -134,9 +132,15 @@ section {
 @media (max-width: 1196px) {
    .rings__columns {
       flex: 1 1 45%;
-      column-gap: 4px;
+      column-gap: 10px;
       flex-wrap: wrap;
       justify-content: center;
+   }
+   .rings__title {
+      text-align: center;
+   }
+   .rings__info {
+      text-align: center;
    }
 }
 
@@ -165,7 +169,6 @@ section {
 @media (any-hover: hover) {
    .rings__more:hover::after {
       color: #dd3709;
-      transform: translateX(5px);
    }
 }
 
@@ -219,6 +222,13 @@ section {
    gap: 15px;
 }
 
+.gold__link {
+   overflow: hidden;
+}
+
+.gold__link img {
+   transition: transform 0.3s;
+}
 
 .gold__label,
 .gold__price {
@@ -227,6 +237,10 @@ section {
    font-weight: 700;
    line-height: 1.4;
    text-align: left;
+}
+
+.gold__link-label {
+
 }
 
 .gold__btn-link {
@@ -294,6 +308,13 @@ section {
    .gold__btn-link:hover {
       background: #d54f1e;
    }
+   .gold__link img:hover {
+      transform: scale(1.1);
+   }
+
+   .gold__link-label:hover {
+      text-decoration: underline;
+   } 
 }
 
 /***********************SECTION: MINI**********************/
