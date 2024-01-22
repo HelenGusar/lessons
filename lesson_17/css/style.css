@@ -40,6 +40,21 @@ section {
    padding: 5px 0;
 }
 
+@media (max-width: 430px) {
+   .header__title,
+   .footer__title {
+      font-size: 45px;
+   }
+}
+
+@media (max-width: 352px) {
+
+   .header__title,
+   .footer__title {
+      font-size: 30px;
+      text-align: center;
+   }
+}
 
 /***********************SECTION: RINGS**********************/
 
@@ -47,11 +62,6 @@ section {
    background: #FEFAF4 url(../img/rings/rings-flower.webp) 100% 83% / 11% no-repeat;
    padding: 125px 0 114px;
    }
-
-
-.rings__container {
-   
-}
 
 .rings__title {
    font-family: "DM Serif Text", serif;
@@ -136,9 +146,7 @@ section {
       flex-wrap: wrap;
       justify-content: center;
    }
-   .rings__title {
-      text-align: center;
-   }
+   .rings__title,
    .rings__info {
       text-align: center;
    }
@@ -212,7 +220,6 @@ section {
    display: flex;
    flex-direction: column;
    gap: 25px;
-   flex: 0 1 270px;
 }
 
 .gold__body {
@@ -227,6 +234,10 @@ section {
 }
 
 .gold__link img {
+   width: 100%;
+   height: 100%;
+   aspect-ratio: 271 / 270;
+   object-fit: contain;
    transition: transform 0.3s;
 }
 
@@ -328,7 +339,7 @@ section {
 .mini {}
 
 .mini__container {
-   max-width: 1200px;
+   max-width: 1205px;
 }
 
 .mini__title {
@@ -356,43 +367,47 @@ section {
    margin-bottom: 77px;
 }
 
-.mini__item {
+
+.mini__item-list {
    color: #FFF;
    font-size: 18px;
    font-style: normal;
    font-weight: 600;
    line-height: 1.27;
-   display: flex;
-   flex-direction: column;
-   gap: 22px;
 }
 
-.mini__item--checked {
+.mini__link--checked {
    text-decoration: underline;
 }
 
-.mini__link {
-
-}
 
 .mini__link img{
    background-color: #1c5e70;
    aspect-ratio: 270 / 271;
    width: 100%;
    height: 100%;
-   object-fit: cover;
+   object-fit: contain;
    border-radius: 5px;
+   transition: transform 0.3s;
 }
 
 .mini__columns {
    display: flex;
+   flex-wrap: wrap;
    column-gap: 30px;
+}
+
+.mini__item {
+   display: flex;
+   flex-direction: column;
+   gap: 22px;
+   flex: 0 1 23.05%;
 }
 
 .mini__info {
    display: flex;
    flex-direction: column;
-   gap: 18px;
+   row-gap: 18px;
 }
 
 .mini__label,
@@ -405,6 +420,101 @@ section {
 }
 
 
+
+@media (max-width: 1372px) {
+   .mini__columns {
+      gap: 20px;
+   }
+}
+
+@media (max-width: 991px) {
+   .mini__columns {
+      gap: 18px;
+   }
+   .mini__label,
+   .mini__price {
+      font-size: 21px;
+   }
+}
+
+@media (max-width: 909px) {
+   
+   .mini__item {
+      flex: 0 1 31%;
+   }
+}
+
+@media (max-width: 734px) {
+   .mini__item {
+      flex: 0 1 44%;
+      justify-content: space-between;
+   }
+   .mini__columns {
+      gap: 35px;
+   }
+   .mini__label,
+   .mini__price {
+      font-size: 19px;
+   }
+}
+
+@media (max-width: 534px) {
+   .mini__item {
+      flex: 1 0 100%;
+      justify-content: space-between;
+   }
+   .mini__columns {
+      gap: 35px;
+   }
+   .mini__label,
+   .mini__price {
+   font-size: 24px;
+   }
+}
+
+@media (max-width: 410px) {
+   .mini__title {
+      font-size: 40px;
+   }
+   .mini__subtitle {
+      font-size: 17px;
+   }
+}
+
+@media (max-width: 372px) {
+   .mini__title {
+      text-align: center;
+      font-size: 35px;
+   }
+   .mini__label,
+   .mini__price {
+      font-size: 15px;
+      text-align: center;
+   }
+   .mini__list {
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 30px;
+   }
+   .mini__item {
+      flex-shrink: 0;
+   }
+}
+
+
+
+
+
+@media (any-hover: hover) {
+   .mini__link:hover,
+   .mini__link--checked:hover,
+   .mini__label:hover {
+      text-decoration: underline;
+   }
+   .mini__link img:hover {
+      transform: scale(1.1);
+   }
+}
 
 
 
