@@ -22,14 +22,13 @@ body {
    padding: 0 15px;
 }
 
-section {
+section:not(:last-child) {
    margin-bottom: 50px;
 }
 
 /*******************************HEADER**************************/
 
 .header {
-   margin-bottom: 60px;
 }
 
 .header__title,
@@ -40,21 +39,43 @@ section {
    padding: 5px 0;
 }
 
+.header,
+.footer {
+   padding: 20px 0;
+}
+
+.header,
+.footer {
+   position: relative;
+}
+
+.header::before,
+.footer::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: url('../img/bg.jpg') center center/cover;
+   z-index: -1;
+}
+
 @media (max-width: 430px) {
+
    .header__title,
    .footer__title {
       font-size: 45px;
    }
 }
 
-@media (max-width: 352px) {
-
-   .header__title,
-   .footer__title {
-      font-size: 30px;
-      text-align: center;
+@media (any-hover: hover) {
+   .header:hover::before,
+   .footer:hover::before {
+      transform: rotate(180deg);
    }
 }
+
 
 /***********************SECTION: RINGS**********************/
 
@@ -93,6 +114,8 @@ section {
    background-color: #511809;
    object-fit: contain;
    margin-bottom: 20px;
+   transition: all 0.3s;
+   overflow: hidden;
 }
 
 .rings__subtitle {
@@ -142,7 +165,7 @@ section {
 @media (max-width: 1196px) {
    .rings__columns {
       flex: 1 1 45%;
-      column-gap: 10px;
+      column-gap: 50px;
       flex-wrap: wrap;
       justify-content: center;
    }
@@ -177,6 +200,13 @@ section {
 @media (any-hover: hover) {
    .rings__more:hover::after {
       color: #dd3709;
+   }
+   .rings__link img:hover {
+      transform: scale(1.1);
+   }
+   .rings__subtitle:hover,
+   .rings__more:hover {
+      text-decoration: underline;
    }
 }
 
@@ -269,7 +299,7 @@ section {
 
 @media (max-width: 1112px) {
    .gold__columns {
-      column-gap: 15px;
+      column-gap: 20px;
       justify-content: space-between;
    }
    .gold__item {
@@ -280,7 +310,7 @@ section {
 
 @media (max-width: 873px) {
    .gold__columns {
-      justify-content: space-around;
+      justify-content: space-between;
    }
    .gold__item {
       flex: 1 1 48%;
@@ -299,10 +329,15 @@ section {
       column-gap: 10px;
    }
    .gold__item {
-      flex: 1 1 100%;
+      flex: 0 1 100%;
    }
    .gold__title {
       font-size: 50px;
+   }
+   .gold__label,
+   .gold__price {
+      text-align: center;
+      font-size: 30px;
    }
 }
 
@@ -312,6 +347,9 @@ section {
    }
    .gold__info {
       font-size: 20px;
+   }
+   .gold__item {
+      padding: 0 15px;
    }
 }
 
@@ -333,7 +371,7 @@ section {
 .page__mini {
    background: #0E333D;
    font-family: "Raleway", sans-serif;
-   padding: 94px;
+   padding: 94px 0;
 }
 
 .mini {}
@@ -424,6 +462,7 @@ section {
 @media (max-width: 1372px) {
    .mini__columns {
       gap: 20px;
+      justify-content: space-between;
    }
 }
 
@@ -435,10 +474,6 @@ section {
    .mini__price {
       font-size: 21px;
    }
-}
-
-@media (max-width: 909px) {
-   
    .mini__item {
       flex: 0 1 31%;
    }
@@ -446,38 +481,34 @@ section {
 
 @media (max-width: 734px) {
    .mini__item {
-      flex: 0 1 44%;
+      flex: 1 1 44%;
       justify-content: space-between;
    }
    .mini__columns {
-      gap: 35px;
+      gap: 25px;
    }
    .mini__label,
    .mini__price {
-      font-size: 19px;
+      font-size: 25px;
    }
 }
 
-@media (max-width: 534px) {
-   .mini__item {
-      flex: 1 0 100%;
-      justify-content: space-between;
-   }
-   .mini__columns {
-      gap: 35px;
-   }
-   .mini__label,
-   .mini__price {
-   font-size: 24px;
-   }
-}
+   
 
-@media (max-width: 410px) {
+@media (max-width: 484px) {
    .mini__title {
       font-size: 40px;
    }
    .mini__subtitle {
       font-size: 17px;
+   }
+   .mini__item {
+      flex: 0 1 100%;
+      text-align: center;
+      padding: 0 15px;
+   }
+   .mini__columns {
+      gap: 20px;
    }
 }
 
@@ -488,16 +519,12 @@ section {
    }
    .mini__label,
    .mini__price {
-      font-size: 15px;
       text-align: center;
    }
    .mini__list {
       flex-wrap: wrap;
       gap: 15px;
       margin-bottom: 30px;
-   }
-   .mini__item {
-      flex-shrink: 0;
    }
 }
 
