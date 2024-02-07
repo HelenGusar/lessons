@@ -282,6 +282,7 @@ main {
 
 .discount__info {
    position: relative;
+   z-index: 3;
 }
 
 .discount__img {
