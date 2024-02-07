@@ -277,12 +277,12 @@ main {
 }
 
 .discount__item {
-   
+   position: relative;
+   z-index: 8;
 }
 
 .discount__info {
-   position: relative;
-   z-index: 3;
+   
 }
 
 .discount__img {
@@ -303,7 +303,9 @@ main {
    letter-spacing: 0.25px;
 }
 
-.discount__title {}
+.discount__title {
+   
+}
 
 .discount__title-link {
    font-size: 34px;
