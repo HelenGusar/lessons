@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:800&display=swap");
+
+
 @font-face {
    font-family: "Causten";
    src: url(../fonts/Causten-regular.woff2) format("woff2"),
@@ -30,6 +33,33 @@
    src: url(../fonts/causten-bold.woff2) format("woff2"),
       url(../fonts/causten-bold.woff) format("woff");
    font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "CoreSansC";
+   src: url(../fonts/coresansc-medium.woff2) format("woff2"),
+      url(../fonts/coresansc-medium.woff) format("woff");
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "CoreSansC";
+   src: url(../fonts/coresansc-semibold.woff2) format("woff2"),
+      url(../fonts/coresansc-semibold.woff) format("woff");
+   font-weight: 600;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "CoreSansC";
+   src: url(../fonts/coresansc-heavy.woff2) format("woff2"),
+      url(../fonts/coresansc-heavy.woff) format("woff");
+   font-weight: 800;
    font-style: normal;
    font-display: swap;
 }
