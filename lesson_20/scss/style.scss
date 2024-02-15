@@ -1,0 +1,231 @@
+// Шрифти
+@import "_fonts.scss";
+
+//  Обнулення
+@import "_reset.scss";
+
+body {
+   font-family: "Inter";
+   font-size: 18px;
+}
+
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.wrapper>main {
+   flex-grow: 1;
+}
+
+[class*="__container"] {
+   max-width: 1250px;
+   margin: 0 auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+/*==============HEADER=================*/
+
+.header {
+
+   // .header__info
+
+   &__info {
+      background: rgb(55, 57, 63);
+      color: rgb(255, 255, 255);
+      line-height: 1.21;
+   }
+
+   // .header__navigation
+
+   &__navigation {
+      
+   }
+}
+
+.info {
+
+   // .info__container
+
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 60px;
+   }
+
+   // .info__coordinates
+
+   &__coordinates {
+      display: flex;
+      align-items: center;
+      column-gap: 42px;
+   }
+
+   // .info__link
+
+   &__link,
+   &__mail {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+   }
+
+   &__link::before {
+      content: '';
+      background: url(../img/icon/location.svg) 0 0 / cover no-repeat;
+      width: 17px;
+      height: 23px;
+      flex: 0 0 17px;
+   }
+
+   // .info__mail
+
+   &__mail::before {
+      content: '';
+      background: url(../img/icon/envelope.svg) 0 0 / cover no-repeat;
+      width: 20px;
+      height: 15px;
+      flex: 0 0 20px;
+   }
+
+   // .info__user
+
+   &__user {
+      display: flex;
+      align-items: center;
+      column-gap: 50px;
+   }
+
+   // .info__time
+
+   &__time {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+   }
+
+   &__time::before {
+      content: '';
+      background: url(../img/icon/time.svg) 0 0 / cover no-repeat;
+      width: 17px;
+      height: 16px;
+      flex: 0 0 17px;
+   }
+
+   // .info__social
+
+   &__social {
+      display: flex;
+      column-gap: 16px;
+   }
+}
+
+.social {
+
+   // .social__item
+
+   &__item {}
+
+   // .social__link
+
+   &__link {}
+}
+
+.navigation {
+
+   // .navigation__container
+
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 131px;
+      background-color: rgb(197, 147, 243);
+   }
+
+   // .navigation__logo
+
+   &__logo {}
+
+   // .navigation__menu
+
+   &__menu {
+      
+   }
+}
+
+.menu {
+
+   // .menu__body
+
+   &__body {
+      display: flex;
+      column-gap: 40px;
+   }
+
+   // .menu__list
+
+   &__list {
+      display: flex;
+      align-items: center;
+      column-gap: 40px;
+   }
+
+   // .menu__item
+
+   &__item {}
+
+   // .menu__link
+
+   &__link {}
+
+   // .menu__item--parent
+
+   &__item--parent {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+   }
+
+   &__item--parent::after {
+      content: '';
+      background: url(../img/icon/menu-arrow.svg) 0 3px / no-repeat;
+      width: 8px;
+      height: 10px;
+      flex: 0 0 9px;
+   }
+
+   // .menu__submenu
+
+   &__submenu {
+      
+   }
+
+   // .menu__btn-link
+
+   &__btn-link {}
+}
+
+.submenu {
+   position: absolute;
+   top: 100%;
+   left: 0;
+
+   // .submenu__list
+
+   &__list {}
+
+   // .submenu__item
+
+   &__item {}
+
+   // .submenu__link
+
+   &__link {}
+}
+
+.icon-menu {}
