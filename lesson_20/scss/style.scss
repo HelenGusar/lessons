@@ -177,11 +177,19 @@ body {
 
    // .menu__item
 
-   &__item {}
+   &__item { 
+      
+   }
 
    // .menu__link
 
-   &__link {}
+   &__link {
+      @media (any-hover:hover) {
+         &:hover .menu__item--parent {
+            transition: transform 0.3s;
+         }
+      }
+   }
 
    // .menu__item--parent
 
@@ -189,14 +197,16 @@ body {
       display: flex;
       align-items: center;
       gap: 7px;
+      transition: all 0.3s;
    }
 
    &__item--parent::after {
       content: '';
-      background: url(../img/icon/menu-arrow.svg) 0 3px / no-repeat;
-      width: 8px;
-      height: 10px;
-      flex: 0 0 9px;
+      background: url(../img/icon/menu-arrow.svg) 0 3px no-repeat;
+      width: 10px;
+      height: 9px;
+      flex: 0 0 10px;
+      transition: all 0.3s;
    }
 
    // .menu__submenu
