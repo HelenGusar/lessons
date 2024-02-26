@@ -1,0 +1,161 @@
+// Шрифти
+@import "_fonts.scss";
+
+//  Обнулення
+@import "_reset.scss";
+
+
+body {
+   font-family: "Inter";
+   font-size: 18px;
+   color: rgb(0, 0, 0);
+}
+
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.wrapper>main {
+   flex-grow: 1;
+}
+
+[class*="__container"] {
+   max-width: 1250px;
+   margin: 0 auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+
+
+/*header*/
+
+.header {
+
+   &__navigation {}
+}
+
+.navigation {
+
+
+   &__container {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      min-height: 130px;
+   }
+
+
+   &__logo {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      flex-shrink: 0;
+   }
+
+
+   &__menu {
+      flex: 1 1 auto;
+   }
+
+
+   &__btn-link {
+      background: rgb(107, 119, 229);
+      color: rgb(255, 255, 255);
+      font-family: "Cabin";
+      font-weight: 600;
+      line-height: 1.22;
+      text-transform: capitalize;
+      padding: 22px 35px;
+   }
+}
+
+.logo {
+
+   // .logo__link
+
+   &__link {}
+
+   // .logo__link--text
+
+   &__link--text {
+      font-family: "Poppins";
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 1.52;
+      & span {
+         color: #6B77E5;
+      }
+   }
+}
+
+.menu {
+
+   // .menu__body
+
+   &__body {}
+
+   // .menu__list
+
+   &__list {
+      display: flex;
+      justify-content: center;
+      column-gap: 42px;
+      row-gap: 5px;
+      flex-wrap: wrap;
+   }
+
+   // .menu__item
+
+   &__item {}
+
+   // .menu__link
+
+   &__link {
+      color: rgb(55, 57, 63);
+      line-height: 1.22;
+   }
+
+   // .menu__item--parent
+
+   &__item--parent {
+      & .menu__link{
+         display: flex;
+         align-items: center;
+         column-gap: 8px;
+      }
+      & .menu__link::after {
+         content: '';
+         background: url(../img/arrow-header.svg) 0 3px no-repeat;
+         width: 11px;
+         height: 9px;
+         flex: 0 0 11px;
+         transition: transform 0.3s;
+      }
+      @media (any-hover: hover) {
+         &:hover .menu__link::after {
+            transform: rotate(180deg);
+         }
+      }
+   }
+
+   // .menu__submenu
+
+   &__submenu {}
+}
+
+.submenu {
+
+   display: none;
+
+   &__list {}
+
+   &__item {}
+
+   &__link {}
+}
+
+.icon-menu {}
