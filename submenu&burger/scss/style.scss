@@ -1,0 +1,30 @@
+// Шрифти
+@import "_fonts.scss";
+
+//  Обнулення
+@import "_reset.scss";
+
+
+body {
+   font-family: "Inter";
+   font-size: 18px;
+   color: rgb(0, 0, 0);
+}
+
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.wrapper>main {
+   flex-grow: 1;
+}
+
+[class*="__container"] {
+   max-width: 1250px;
+   margin: 0 auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
