@@ -14,16 +14,27 @@
 
       <header class="header">
 
+         <!--верхня частина (місце/пошти/час/соцмережі)-->
          <div class="header__info info">
             <div class="info__container">
 
+               <!--адреса та пошта-->
                <div class="info__coordinates">
+
+                  <!--адреса-->
                   <a href="#" target="_blank" class="info__link">24 Olive Street, Prairie, NY 53590</a>
+
+                  <!--мейл-->
                   <div class="info__mail">whitecollar@gmail.com</div>
                </div>
 
+               <!--години роботи та соц.мережі-->
                <div class="info__user">
+
+                  <!--час роботи-->
                   <div class="info__time">Mon - Fri: 8:00 am - 5:00 pm</div>
+
+                  <!--соц.мережі-->
                   <ul class="info__social social">
                      <li class="social__item">
                         <a href="https://www.instagram.com/" class="social__link" target="_blank">
@@ -50,12 +61,19 @@
             </div>
          </div>
 
+         <!--нижня частина (лого/меню/кнопка)-->
          <div class="header__navigation navigation">
             <div class="navigation__container">
-               <a href="#" class="navigation__logo">
-                  <img src="img/logo.svg" alt="logo">
-               </a>
-
+         
+               <!--логотип-->
+               <div class="navigation__logo logo">
+                  <a href="#" class="logo__link">
+                     <img src="img/logo.svg" alt="logo-vector">
+                  </a>
+                  <a href="#" class="logo__link logo__link--text">WhiteCo<span>ll</span>ar</a>
+               </div>
+         
+               <!--меню-->
                <div class="navigation__menu menu">
                   <div class="menu__body">
                      <ul class="menu__list">
@@ -67,6 +85,8 @@
                         </li>
                         <li class="menu__item menu__item--parent">
                            <a href="#" class="menu__link">Pages</a>
+         
+                           <!--під-меню-->
                            <div class="menu__submenu submenu">
                               <ul class="submenu__list">
                                  <li class="submenu__item">
@@ -83,6 +103,7 @@
                                  </li>
                               </ul>
                            </div>
+         
                         </li>
                         <li class="menu__item">
                            <a href="#" class="menu__link">Services</a>
@@ -94,17 +115,25 @@
                            <a href="#" class="menu__link">Contact Us</a>
                         </li>
                      </ul>
-
-                     <a href="#" class="menu__btn-link">Get Consulting</a>
-
-                     <button class="icon-menu">
-                        <span></span>
-                     </button>
                   </div>
                </div>
+         
+               <!--кнопка-посилання-->
+               <a href="#" class="navigation__btn-link">Get Consulting</a>
+         
+               <!--кнопка для бургеру-->
+               <button class="icon-menu">
+                  <span></span>
+               </button>
+         
             </div>
          </div>
       </header>
+
+
+
+      
+<!--------------------------------------------->
 
       <main class="page">
          <section class="page__business business">
@@ -160,8 +189,8 @@
                      <input type="email" class="form__field" name="email" placeholder="Email Address" required>
                      <input type="tel" class="form__field" name="phone" placeholder="Phone Number" required>
                      <div class="form__box">
-                        <input type="date" class="form__field form__field--date" name="date" placeholder="Date" required>
-                        <input type="time" class="form__field form__field--time" name="time" placeholder="Time" required>
+                        <input type="text" class="form__field form__field--date" autocomplete="off" onfocus="(this.type='date')" onblur="(this.type='text')" name="date" placeholder="Date" required>
+                        <input type="text" class="form__field form__field--time" name="time" placeholder="Time" onfocus="(this.type='time')" та onblur="(this.type='text')" required>
                      </div>
                      <textarea name="descr" class="form__field form__field--textarea" placeholder="Service Description" autocomplete="off"></textarea>
                      <button class="form__button" type="submit">Submit</button>
@@ -179,7 +208,7 @@
                <a href="" class="footer__link">
                   <img src="img/logo-footer.svg" alt="logo" class="footer__logo">
                </a>
-               
+
                <ul class="footer__list">
 
                   <li class="footer__item footer__item--tel">
@@ -238,6 +267,7 @@
          </div>
       </footer>
    </div>
+   <script src="js/script.js"></script>
 </body>
 
 </html>
