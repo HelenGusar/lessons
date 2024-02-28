@@ -31,8 +31,8 @@ body {
 
 main {
    padding-top: 130px;
-   @media (max-width: 995) {
-      padding-top: 75px;
+   @media (max-width: 995px) {
+      padding-top: 55px;
    }
 }
 
@@ -69,9 +69,6 @@ main {
       column-gap: 40px;
       row-gap: 15px;
       min-height: 60px;
-      @media (max-width: 995px){
-         // max-width: 900px;
-      }
       @media (max-width: 545px) {
             justify-content: center;
          }
@@ -149,18 +146,24 @@ main {
    &__social {
       display: flex;
       column-gap: 16px;
+      transition: transform 0.3s;
       @media (max-width: 545px) {
             column-gap: 40px;
          }
+      }
    }
-}
 
 .social {
 
    // .social__item
 
    &__item {
-      
+      transition: transform 0.3s;
+      @media (any-hover: hover) {
+            &:hover {
+               transform: scale(1.2);
+            }
+         }
    }
 
    // .social__link
@@ -181,7 +184,6 @@ main {
 
       @media (max-width: 995px) {
          min-height: 75px;
-         max-width: 600px;
       }
    }
 
@@ -206,6 +208,13 @@ main {
       line-height: 1.22;
       text-transform: capitalize;
       padding: 22px 35px;
+      transition: background-color 0.3s;
+
+      @media (any-hover: hover) {
+         &:hover {
+            background-color: rgb(83, 98, 226);
+         }
+      }
       
 
       @media (max-width: 1100px) {
@@ -214,7 +223,6 @@ main {
 
       @media (max-width: 995px) {
          padding: 17px 20px;
-         margin-right: 20px;
       }
    }
 }
@@ -239,7 +247,11 @@ main {
       flex-shrink: 0;
       position: relative;
       z-index: 5;
+      @media (max-width: 478px) {
+         display: none;
+      }
    }
+   
 }
 
 .menu {
@@ -261,10 +273,10 @@ main {
             top: 0;
             left: -100%;
             width: 100%;
-            height: 75px;
+            height: 60px;
             z-index: 2;
             transition: left 0.3s;
-            background-color: #61f0f7;
+            background-color: #681ee8;
          }
       }
    }
@@ -469,11 +481,24 @@ main {
       & .info__user {
          display: flex;
          z-index: 20;
-         color: black;
       }
 
+      & .info__coordinates {
+         @media (max-width: 485px) {
+               display: none;
+            }
+      }
+
+      & .info__time {
+         @media (max-width: 485px) {
+               font-size: 16px;
+            }
+      }
+
+      
+
       & .menu__list {
-         padding: 30px 110px 0;
+         padding: 30px 0;
       }
    }
       @media (max-width: 545px) {
@@ -528,23 +553,32 @@ main {
 .business {
    color: rgb(255, 255, 255);
    padding: 123px 0;
-   // .business__container
 
    &__container {
       display: flex;
       column-gap: 53px;
+      @media (max-width: 822px) {
+         flex-wrap: wrap;
+         padding-left: 30px;
+         padding-right: 30px;
+      }
    }
-
-   // .business__info
 
    &__info {
-      flex: 0 1 580px;
+      @media (max-width: 822px) {
+         &:not(:last-child) {
+               margin-bottom: 55px;
+            }
+      }
    }
 
-   // .business__data
-
+   &__info,
    &__data {
-      flex: 0 1 580px;
+      flex: 0 1 48%;
+      @media (max-width: 822px) {
+         flex: 1 1 100%;
+         flex-direction: column;
+      }
    }
 }
 
@@ -574,7 +608,7 @@ main {
       align-items: center;
       column-gap: 23px;
       background: rgb(64, 221, 182);
-      max-width: 587px;
+      // max-width: 587px;
       padding: 35px;
       margin-bottom: 50px;
    }
@@ -709,11 +743,15 @@ main {
       padding: 21px 33px;
       border: 1px solid rgb(221, 221, 221);
       background-color: rgb(248, 248, 248);
+      @media (max-width: 822px) {
+            max-width: 100%;
+         }
    }
 
    &__field:not(:last-child) {
       margin-bottom: 30px;
    }
+
 
    // .form__box
 
@@ -721,7 +759,11 @@ main {
       display: flex;
       column-gap: 23px;
 
-      @media (max-width: 944px) {}
+      @media (max-width: 1106px) {
+         flex-direction: column;
+         flex-wrap: wrap;
+         margin-bottom: 30px;
+      }
 
    }
 
@@ -735,6 +777,13 @@ main {
    &__field--time {
       max-width: 220px;
       height: 65px;
+      @media (max-width: 1106px) {
+         flex-basis: 98%;
+         max-width: 464px;
+         @media (max-width: 822px) {
+               max-width: 100%;
+            }
+      }
    }
 
    &__field--date {}
@@ -755,6 +804,12 @@ main {
       font-weight: 600;
       line-height: 22px;
       text-transform: capitalize;
+      transition: background-color 0.3s;
+      @media (any-hover: hover) {
+            &:hover {
+               background-color: rgb(42, 196, 158);
+            }
+         }
    }
 }
 
@@ -771,6 +826,9 @@ textarea::placeholder {
    background: rgb(55, 57, 63);
    color: rgb(255, 255, 255);
    padding: 95px 0 95px;
+   @media (max-width: 1021px) {
+         padding: 50px 0 50px;
+      }
 
    // .footer__container
 
@@ -786,6 +844,9 @@ textarea::placeholder {
       align-items: center;
       justify-content: space-between;
       gap: 20px;
+      @media (max-width: 1021px) {
+         flex-direction: column;
+      }
    }
 
    &__box--bottom {
@@ -794,6 +855,9 @@ textarea::placeholder {
       align-items: center;
       gap: 20px;
       padding-top: 25px;
+      @media (max-width: 963px) {
+            flex-direction: column;
+         }
    }
 
    // .footer__link
@@ -804,13 +868,26 @@ textarea::placeholder {
 
    // .footer__logo
 
-   &__logo {}
+   &__logo {
+      // @media (max-width: 1023px) {
+      //    display: none;
+      // }
+   }
 
    // .footer__list
 
    &__list {
       display: flex;
       column-gap: 60px;
+      @media (max-width: 1086px) {
+         column-gap: 30px;
+      }
+      @media (max-width: 800px) {
+         font-size: 15px;
+         gap: 20px;
+         flex-wrap: wrap;
+         justify-content: space-between;
+      }
    }
 
    // .footer__item
@@ -825,6 +902,7 @@ textarea::placeholder {
       content: '';
       width: 68px;
       height: 68px;
+      flex: 0 0 68px;
       border-radius: 50%;
    }
 
@@ -859,6 +937,16 @@ textarea::placeholder {
    }
 
    // .footer__copyright
+
+   &__copyright {
+      @media (max-width: 747px) {
+         font-size: 14px;
+      }
+      @media (max-width: 589px) {
+         max-width: 300px;
+         text-align: center;
+      }
+   }
 
    &__copyright,
    &__text {
